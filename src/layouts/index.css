@@ -1,5 +1,5 @@
 .gradient {
-  background: linear-gradient(135deg, #ffa84c 0%, #ff7b0d 100%);
+  background: linear-gradient(135deg, #2aa198 0%, #2aa198 100%);
 }
 
 .navbar {
@@ -126,4 +126,9 @@
   width: 100%;
   border: 1px solid #666;
   border-radius: 5px;
+}
+
+
+h1 {
+  margin-bottom: 20px;
 }

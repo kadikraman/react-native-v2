@@ -1,17 +1,12 @@
 module.exports = {
   siteMetadata: {
-    title: "Gatsby Starter Course",
-    subtitle: "For making great content",
+    title: "React Native v2",
+    subtitle: "Building mobile applications",
     description:
-      "This is the description that will show up when people share as well as on search engines",
-    keywords: [
-      "this is",
-      "a list of keywords and phrase",
-      "that search engines",
-      "will index your page for"
-    ]
+      "All you need to know when starting a new React Native project",
+    keywords: ["React Native", "iOS", "Android", "hooks"]
   },
-  //pathPrefix: "/my-repo-name", // if you're using GitHub Pages, put the name of the repo here with a leading slash
+  pathPrefix: "/react-native-v2",
   plugins: [
     `gatsby-plugin-layout`,
     {
@@ -38,6 +33,14 @@ module.exports = {
             }
           }
         ]
+      }
+    },
+    {
+      resolve: `gatsby-plugin-sharp`,
+      options: {
+        useMozJpeg: false,
+        stripMetadata: true,
+        defaultQuality: 75
       }
     }
   ]
