@@ -22,8 +22,6 @@ const LessonCard = ({ content, title }) => {
       return acc;
     }, []);
 
-  console.log(sections);
-
   return (
     <div className="main-card">
       <h1 className="lesson-title gradient">{title}</h1>

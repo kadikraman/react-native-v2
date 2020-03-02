@@ -1,9 +1,9 @@
 ---
-path: "/intro"
-title: "Introduction"
+path: '/intro'
+title: 'Welcome'
 order: 0
-section: "Welcome"
-description: "Kadi will talk about why React Native is a good choice of technology for building mobile applications"
+section: 'Introduction'
+description: 'Kadi will talk about why React Native is a good choice of technology for building mobile applications'
 ---
 
 Hi there, and welcome to React Native v2! 👋
@@ -23,6 +23,7 @@ The intended audience for this course are people who are familiar with JavaScrip
 In this course, I will be using a MacBook Pro, an iPhone simulator and an Android emulator from Android Studio.
 
 You do not need to match my setup, but you should have:
+
 - either a Mac, Windows or Linux machine
 - either a physical device (iPhone or Android) OR a simulator/emulator installed
 

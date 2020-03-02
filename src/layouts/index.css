@@ -1,4 +1,4 @@
-.gradient {
+/* .gradient {
   background: linear-gradient(135deg, #2aa198 0%, #2aa198 100%);
 }
 
@@ -89,7 +89,7 @@
 }
 
 .gatsby-highlight {
-  /* border: 1px solid black; */
+  border: 1px solid black;
   padding: 4px;
   border-radius: 4px;
   display: flex;
@@ -128,7 +128,77 @@
   border-radius: 5px;
 }
 
-
 h1 {
   margin-bottom: 20px;
+} 
+*/
+
+/* jon styles */
+
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+
+body {
+  font-family: "Roboto";
+  background-color: #cafafe;
 }
+
+a,
+li a {
+  color: #55bcc9;
+}
+
+.navbar {
+  border-bottom: solid 4px #bae4e8;
+}
+
+li {
+  padding: 10px 0px 0px 10px;
+}
+
+.gradient {
+  background: linear-gradient(135deg, #cafafe 0%, #cafafe 100%);
+}
+
+.lesson {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 70%;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.lesson-content {
+  padding: 0;
+}
+
+p {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  line-height: 2;
+}
+
+h2,
+h1 {
+  padding-top: 20px;
+  /* padding-bottom: 10px; */
+}
+
+p {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  line-height: 2;
+}
+
+.lesson-links {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.lesson-links a:only-child {
+  align-self: flex-end;
+  margin-left: auto;
+}
+
+/* end of jon styles */
