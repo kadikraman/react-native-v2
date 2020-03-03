@@ -1,12 +1,12 @@
 ---
 path: '/code-style'
 title: 'Adding a linter'
-order: 5
-section: 'Setup'
+order: 10
+section: 'Beyond Basics'
 description: 'Kadi explains the importance of consistent code style and we install a linter'
 ---
 
-Before we get stuck in, there's just one more thing we should do - install a linter. This step is not strictly mandatory, but highly encouraged. I always set up linting and code formatting from the onset when starting a new project, even if it's just personal or hobby projects for my eyes only!
+Adding a linter to your React Native project is a highly encouraged. Not only does it help ensure a consistent code style throughout the project, it also highlights errors and often uncovers bad practices. I always set up linting and code formatting from the onset when starting a new project, even if it's just personal or a hobby project!
 
 The go-to linter for JavaScript is called [eslint](https://eslint.org/). There are three main reasons you should always install a linter:
 
@@ -101,4 +101,4 @@ Code => Preferences => Extentions => ESLint
 
 Atom => Preferences => Install => linter-eslint
 
-You may have to close and reopen your code editor for the package to start working, but that's it! You now have the optimum working environment. Let's get coding!
+You may have to close and reopen your code editor for the package to start working, but that's it! You now have the optimal working environment.

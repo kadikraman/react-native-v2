@@ -46,19 +46,33 @@ const styles = StyleSheet.create({
 export default App;
 ```
 
-Very stylish! Now let's try adding different padding to the top and sides? Let's do 50px on the top and 10px on the sides. You might do something like this:
+Very stylish! This is pretty similar to the web, only we omit the units (`px`, `em`, `rem` etc), because all dimensions in React Native are unitless, and represent density-independent pixels.
+
+Adding a background colour for the component while your debugging can help understand positioning. Let's also add a background colour to our View before continuing:
 
 ```js
 const styles = StyleSheet.create({
   container: {
+    backgroundColor: 'lavender',
+    padding: 10,
+  },
+});
+```
+
+Notice that the style names in React Native are in camelCase instead of kebab-case, but otherwise are the same as the web!
+
+Now let's try adding different padding to the top and sides? Let's do 50 on the top and 10 on the sides. You might do something like this:
+
+```js
+const styles = StyleSheet.create({
+  container: {
+    backgroundColor: 'lavender',
     paddingTop: 50,
     paddingLeft: 10,
     paddingRight: 10,
   },
 });
 ```
-
-Notice that this looks quite similar to css only we use camelCase instead of kebab-case, and we use numbers for pixel values and there is no need to add the unit (e.g. `px`) in the end.
 
 This works well enough, but in React Native we also have a shorthand way to set equal padding to left an right - `paddingHorizontal`. You can replace `paddingLeft` and `paddingRight` with a single `paddingHorizontal` like so:
 
@@ -73,72 +87,35 @@ const styles = StyleSheet.create({
 
 There is also `paddingVertical` for setting just top and bottom padding, and there are also equivalent style properties for margin: `marginHorizontal` and `marginVertical`.
 
-## Coding Challenge 💪
+## Positioning
 
-The best way to learn is by doing so let's start off by adding some colour. Here's a little app I built, showcasing come of my favourite colours. Try to recreate it! Here are the colours I used:
+In React Native, all positioning is done using FlexBox and all elements have `display: flex` applied by default. If you've not used flex much before it may seem a bit daunting, but the basics are not too tricky to grasp. If you have time, [FlexBox froggy](https://flexboxfroggy.com/) is a fun little game that introduce you to the flex iteratively while you move frogs around the pond. For everyday reference [this guide](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) from CSS Tricks is pretty handy.
 
-```
-Cyan: #2aa198
-Blue: #268bd2
-Magenta: #d33682
-Orange: #cb4b16
-```
-
-<div style="display:flex; flex-direction:row">
-    <div style="width:400px;margin:0 auto;margin-bottom:20px">
-        <img alt="Style challenge iOS" src="./images/style-ios.png" />
-    </div>
-    <div style="width:400px;margin:0 auto;margin-bottom:20px">
-        <img alt="Style challenge Android" src="./images/style-android.png" />
-    </div>
-</div>
-
-## Coding challenge - solution
-
-First thing we want to do is add the new text. Since we already have some text on the page, we can do this by replacing the copy for our "Hello, world!" message and adding the style:
+Let's update our container so that all the text is in the center of the screen. First, let's center the text horizontally.
 
 ```js
-// replace "hello world" text and add style prop
-
-<Text style={styles.heading}>Here are some boxes of different colours</Text>
+const styles = StyleSheet.create({
+  container: {
+    backgroundColor: 'lavender',
+    alignItems: 'center',
+  },
+});
 ```
+
+That was easy! `alignItems: 'center'` will center any content inside it horizontally. Now let's also center the content vertically.
 
 ```js
-// place this in the stylesheet, under the container style
-
-heading: {
-  fontSize: 18,
-  fontWeight: 'bold',
-  marginBottom: 10,
-}
+const styles = StyleSheet.create({
+  container: {
+    backgroundColor: 'lavender',
+    alignItems: 'center',
+    justifyContent: 'center',
+    height: 100
+  },
+});
 ```
 
-Now for lets add a box for cyan. For this we need to add a new `View` and a `Text` with styles. One thing to note about styling in React Native is that all elements have `display: flex` applies by default so all positioning should be done using felxBox. If you're new to flexBox, here are some resources TODO: link to flexbox froggy and flex documentation.
-
-You can use `justifyContent: 'center'` and `alignItems: 'center'` on the parent element to center content both horizontally and vertically.
-
-```js
-<View style={styles.cyanBox}>
-  <Text style={styles.text}>Cyan #2aa198</Text>
-</View>
-```
-
-```js
-text: {
-  fontWeight: 'bold',
-  color: 'white'
-},
-cyanBox: {
-  padding: 10,
-  borderRadius: 3,
-  justifyContent: 'center',
-  alignItems: 'center',
-  marginBottom: 10,
-  backgroundColor: '#2aa198'
-}
-```
-
-Looking good! Let's add the blue box as well. Your `App.js` now looks something like this:
+This centers the content inside the lavender box. Notice we needed to se the height of the box in order for this to work. But how could we do it so the box is full height? We use `flex: 1`. Adding `flex: 1` to the container itself won't work though, because it means that the component should take the whole height of it's parent, but it's parent is a `SafeAreaView` that has no height. We'll also have to set `flex: 1` to the `SafeAreaView`. Let's try something different and do it _inline_!
 
 ```js
 // App.js
@@ -148,17 +125,9 @@ import { View, Text, SafeAreaView, StyleSheet } from 'react-native';
 
 const App = () => {
   return (
-    <SafeAreaView>
+    <SafeAreaView style={{ flex: 1 }}>
       <View style={styles.container}>
-        <Text style={styles.heading}>
-          Here are some boxes of different colours
-        </Text>
-        <View style={styles.cyanBox}>
-          <Text style={styles.text}>Cyan #2aa198</Text>
-        </View>
-        <View style={styles.blueBox}>
-          <Text style={styles.text}>Blue #268bd2</Text>
-        </View>
+        <Text>Hello, world!</Text>
       </View>
     </SafeAreaView>
   );
@@ -166,63 +135,39 @@ const App = () => {
 
 const styles = StyleSheet.create({
   container: {
-    padding: 10,
-  },
-  heading: {
-    fontSize: 18,
-    fontWeight: 'bold',
-    marginBottom: 10,
-  },
-  text: {
-    fontWeight: 'bold',
-    color: 'white',
-  },
-  cyanBox: {
-    padding: 10,
-    borderRadius: 3,
-    justifyContent: 'center',
+    backgroundColor: 'lavender',
     alignItems: 'center',
-    marginBottom: 10,
-    backgroundColor: '#2aa198',
-  },
-  blueBox: {
-    padding: 10,
-    borderRadius: 3,
     justifyContent: 'center',
-    alignItems: 'center',
-    marginBottom: 10,
-    backgroundColor: '#268bd2',
+    flex: 1,
   },
 });
 
 export default App;
 ```
 
-This is looking good, but you might have noticed there are a lot of repeated styles between the two boxes and this can get cumbersome pretty quickly. Thankfully there is a way around this. The `style` prop also accepts an _array_ of styles, so instead of `style={styles.cyanBox}` we could pass in two sets of styles: `style={[styles.box, styles.cyan]}`.
+Great work! Using styles inline is handy especially when you have dynamic styles (e.g having to set the height or colour of the element dynamically), but generally we try to use the StyleSheet for styles, has some optimizations that are lost otherwise.
+
+
+### Styled Components
+
+If you are a fan of styled components, you might be excited to know that they have React Native support! Styling native elements looks pretty much the same as on the web, only instead of:
 
 ```js
-<View style={[styles.box, styles.cyan]}>
-    <Text style={styles.text}>Cyan #2aa198</Text>
-</View>
-<View style={[styles.box, styles.blue]}>
-    <Text style={styles.text}>Blue #268bd2</Text>
-</View>
+import styled from 'styled-components'
+
+const StyledDiv = styled.div`
+  background-color: lavender;
+`;
 ```
+
+You'll have to do:
 
 ```js
-box: {
-  padding: 10,
-  borderRadius: 3,
-  justifyContent: 'center',
-  alignItems: 'center',
-  marginBottom: 10,
-},
-cyan: {
-  backgroundColor: '#2aa198'
-},
-blue: {
-  backgroundColor: '#268bd2'
-},
+import styled from 'styled-components/native'
+
+const StyledView = styled.View`
+  background-color: lavender;
+`;
 ```
 
-Finally add the remaining colours. The finished code should look something like this. (TODO: link to example app)
+Otherwise the experience is exactly the same! You can even use `snake-case`! For this workshop, we will use StyleSheet, buy feel free to explore this in your own time. Read more about it [here](https://styled-components.com/docs/basics#react-native).
