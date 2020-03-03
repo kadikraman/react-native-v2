@@ -16,9 +16,17 @@ I build React Native apps for a living and my main goal is to show you how I do 
 
 The aim of the course is to give you the knowledge and resources necessary to start working on your own React Native project. We will cover what React Native is and how it works, what kind of components and tooling is available, and how to use them. We will stick with built-in and mainsteam components, and minimize the use of third party components.
 
+## Course guide
+
+The course is designed to be pretty hands-on: the general pattern is that we'll introduce a concept and then apply it.
+
+- chapters marked with a 📝 emoji are exercises. How you approach them is up to you! If you generally learn best by doing, I'd recommend spending up to 10-15 minutes in completing the exercise independently before looking at the solution.
+- there will be a link 🔗 at the end of each lesson that points to a GitHub repository with the solution. Use this as a reference to check your work.
+- you can follow this course with Expo or without, the choice is yours. For most lessons, this doesn't matter. There are a couple of pages that are specific to the platform though. These will be prefixed with `[Expo]` or `[RN]` - choose the one that applies to you and ignore the other
+
 ## About You
 
-The intended audience for this course are people who are familiar with JavaScript, but new to React Native. If you already know React, that's perfect, since your React skills are completely transferrable to React Native, with only minor modifications to account for the native platform. However if you are new to both React and Native, never fear! I will be explaining all the React concepts as well as the React Native concepts as we discover them together.
+The intended audience for this course are people who are familiar with JavaScript, but new to React Native. If you already know React, that's perfect, since your React skills are completely transferrable to React Native, with only minor modifications to account for the native platform. However if you are new to both React and Native, never fear! I will be explaining all the React concepts as well as the React Native concepts as we discover them together, however there will be more of a focus on the parts of React Native that _differ_ from React on the web.
 
 In this course, I will be using a MacBook Pro, an iPhone simulator and an Android emulator from Android Studio.
 
