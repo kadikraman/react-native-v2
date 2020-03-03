@@ -26,7 +26,39 @@ Orange: #cb4b16
 
 ## Styling Exercise Solution 👀
 
-First thing we want to do is add the new text. Since we already have some text on the page, we can do this by replacing the copy for our "Hello, world!" message and adding the style:
+Lets start from a clean slate again.
+
+Delete all the code in your `App.js` and replace it with the Hello World template we used earlier:
+
+```js
+import React from 'react';
+import { View, Text, SafeAreaView, StyleSheet } from 'react-native';
+
+const App = () => {
+  return (
+    <SafeAreaView>
+      <View>
+        <Text>Hello, world!</Text>
+      </View>
+    </SafeAreaView>
+  );
+};
+
+export default App;
+```
+
+Now the first thing you'll want to do is add some padding to the container. Let's to 50 from the top and 10 from the sides:
+
+```js
+const styles = StyleSheet.create({
+  container: {
+    paddingTop: 50,
+    paddingHorizontal: 10,
+  },
+});
+```
+
+Now it's time to add the new text. Since we already have some text on the page, we can do this by replacing the copy for our "Hello, world!" message and adding the style:
 
 ```js
 // replace "hello world" text and add style prop
@@ -44,9 +76,7 @@ heading: {
 }
 ```
 
-Now for lets add a box for cyan. For this we need to add a new `View` and a `Text` with styles. One thing to note about styling in React Native is that all elements have `display: flex` applies by default so all positioning should be done using felxBox. If you're new to flexBox, here are some resources TODO: link to flexbox froggy and flex documentation.
-
-You can use `justifyContent: 'center'` and `alignItems: 'center'` on the parent element to center content both horizontally and vertically.
+Now for lets add a box for cyan. For this we need to add a new `View` and a `Text` with styles. Remember we'll have to use flex to position the text inside the boxes!
 
 ```js
 <View style={styles.cyanBox}>
@@ -97,7 +127,8 @@ const App = () => {
 
 const styles = StyleSheet.create({
   container: {
-    padding: 10,
+    paddingTop: 50,
+    paddingHorizontal: 10,
   },
   heading: {
     fontSize: 18,
@@ -156,4 +187,6 @@ blue: {
 },
 ```
 
-Finally add the remaining colours. The finished code should look something like this. (TODO: link to example app)
+Finally add boxes for the remaining colours (magenta and orange) the same way, and we're all done!
+
+[🔗 RN 6e25403](https://github.com/kadikraman/AwesomeProjectRN/commit/6e25403f495a7cf7cc70cd5f177ce01379300556)

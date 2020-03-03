@@ -79,6 +79,7 @@ This works well enough, but in React Native we also have a shorthand way to set 
 ```js
 const styles = StyleSheet.create({
   container: {
+    backgroundColor: 'lavender',
     paddingTop: 50,
     paddingHorizontal: 10,
   },
@@ -86,6 +87,8 @@ const styles = StyleSheet.create({
 ```
 
 There is also `paddingVertical` for setting just top and bottom padding, and there are also equivalent style properties for margin: `marginHorizontal` and `marginVertical`.
+
+[🔗 RN 931eebc](https://github.com/kadikraman/AwesomeProjectRN/commit/931eebc6558c65a9c66c6fcb3bbe63386ec0204c)
 
 ## Positioning
 
@@ -110,7 +113,7 @@ const styles = StyleSheet.create({
     backgroundColor: 'lavender',
     alignItems: 'center',
     justifyContent: 'center',
-    height: 100
+    height: 100,
   },
 });
 ```
@@ -147,13 +150,14 @@ export default App;
 
 Great work! Using styles inline is handy especially when you have dynamic styles (e.g having to set the height or colour of the element dynamically), but generally we try to use the StyleSheet for styles, has some optimizations that are lost otherwise.
 
+[🔗 RN 05e9509](https://github.com/kadikraman/AwesomeProjectRN/commit/05e9509779347160320075a2cce630c7cbe00636)
 
-### Styled Components
+### Side note: Styled Components
 
 If you are a fan of styled components, you might be excited to know that they have React Native support! Styling native elements looks pretty much the same as on the web, only instead of:
 
 ```js
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 const StyledDiv = styled.div`
   background-color: lavender;
@@ -163,11 +167,11 @@ const StyledDiv = styled.div`
 You'll have to do:
 
 ```js
-import styled from 'styled-components/native'
+import styled from 'styled-components/native';
 
 const StyledView = styled.View`
   background-color: lavender;
 `;
 ```
 
-Otherwise the experience is exactly the same! You can even use `snake-case`! For this workshop, we will use StyleSheet, buy feel free to explore this in your own time. Read more about it [here](https://styled-components.com/docs/basics#react-native).
+Otherwise the experience is exactly the same! You can even use `snake-case` like on the web! For this workshop, we will use StyleSheet, buy feel free to explore this in your own time. Read more about it [here](https://styled-components.com/docs/basics#react-native).
