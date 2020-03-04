@@ -1,7 +1,7 @@
 ---
 path: '/styling-exercise'
 title: 'Styling Exercise 📝'
-order: 8
+order: 9
 section: 'Basic components'
 description: 'Styling challenge'
 ---

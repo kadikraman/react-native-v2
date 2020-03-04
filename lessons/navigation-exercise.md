@@ -1,7 +1,7 @@
 ---
 path: '/navigation-exercise'
 title: 'Navigation Exercise 📝'
-order: 16
+order: 17
 section: 'Navigation'
 description: 'Passing parameters'
 ---

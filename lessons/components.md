@@ -1,7 +1,7 @@
 ---
 path: '/components'
 title: 'Components'
-order: 9
+order: 10
 section: 'Basic components'
 description: 'Something something components'
 ---

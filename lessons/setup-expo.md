@@ -1,5 +1,5 @@
 ---
-path: '/page-2'
+path: '/setup-expo'
 title: '[Expo] Getting started with Expo'
 order: 3
 section: 'Setup'

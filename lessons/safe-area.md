@@ -1,7 +1,7 @@
 ---
 path: '/safe-area'
 title: 'Safe Area'
-order: 6
+order: 7
 section: 'Basic components'
 description: 'Using SafeAreaView to target to ensure the content is available'
 ---

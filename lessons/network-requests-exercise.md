@@ -1,7 +1,7 @@
 ---
 path: '/network-requests-exercise'
 title: 'Network Requests Exercise 📝'
-order: 18
+order: 19
 section: 'Hooks and Network Requests'
 description: 'We use a network request to fetch our color palettes'
 ---
