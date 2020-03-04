@@ -22,7 +22,8 @@ The course is designed to be pretty hands-on: the general pattern is that we'll 
 
 - chapters marked with a 📝 emoji are exercises. How you approach them is up to you! If you generally learn best by doing, I'd recommend spending up to 10-15 minutes in completing the exercise independently before looking at the solution.
 - there will be a link 🔗 at the end of each lesson that points to a GitHub repository with the solution. Use this as a reference to check your work.
-- you can follow this course with Expo or without, the choice is yours. For most lessons, this doesn't matter. There are a couple of pages that are specific to the platform though. These will be prefixed with `[Expo]` or `[RN]` - choose the one that applies to you and ignore the other
+- you will also occasionally see links with a 🔍 emoji - these are code examples in Expo Snack, which there to help introduce or illustrate a concept. You can look at these in the browser (unless specified otherwise) or on your phone if you have the Expo app installed. Feel free to play around with them, your changes will not be saved to the hosted version.
+- you can follow this course with Expo or without, the choice is yours. For most lessons, this doesn't matter. There are a couple of pages that are specific to the platform though. These will be prefixed with `[Expo]` or `[RN]` - choose the one that applies to you and ignore the other.
 
 ## About You
 
