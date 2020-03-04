@@ -77,4 +77,4 @@ Now you'll have to also rebuild the native application. Whenever you add a libra
 
 Open you terminal and run `npx react-native run-ios` or `npx react-native run-android` depending on what you're building for.
 
-[🔗 RN 8a9d2eb](https://github.com/kadikraman/AwesomeProjectRN/commit/8a9d2ebef900212cea1fe734ecd6eae917658992)
+[🔗 RN 2f545f0](https://github.com/kadikraman/AwesomeProjectRN/commit/2f545f0d4d08b7efc5f44c18479312c7be450eb1)
