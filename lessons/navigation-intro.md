@@ -1,6 +1,6 @@
 ---
-path: '/navigation'
-title: 'Navigation'
+path: '/navigation-intro'
+title: 'Navigation Into'
 order: 12
 section: 'Navigation'
 description: 'Intro to navigation'

@@ -56,3 +56,7 @@ p {
   margin-top: 20px;
   margin-bottom: 20px;
 }
+
+.gatsby-highlight {
+  margin-bottom: 20px;
+}
