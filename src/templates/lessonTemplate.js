@@ -17,7 +17,7 @@ export default function Template(props) {
         {"← " +
           allMarkdownRemark.edges[frontmatter.order - 1].node.frontmatter.title}
       </Link>
-    ) : null;
+    ) : <span />;
   const nextLink =
     frontmatter.order + 1 < allMarkdownRemark.edges.length ? (
       <Link
@@ -29,7 +29,7 @@ export default function Template(props) {
         {allMarkdownRemark.edges[frontmatter.order + 1].node.frontmatter.title +
           " →"}
       </Link>
-    ) : null;
+    ) : <span />;
   return (
     <div className="lesson-container">
       <div className="lesson">

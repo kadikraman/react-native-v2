@@ -1,7 +1,7 @@
 ---
 path: '/intro-to-react'
 title: 'Basic React Native components'
-order: 6
+order: 5
 section: 'Basic components'
 description: 'We get started with the basic building blocks of a React Native application'
 ---

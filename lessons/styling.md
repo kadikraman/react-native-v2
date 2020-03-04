@@ -1,7 +1,7 @@
 ---
 path: '/styling'
 title: 'Styling'
-order: 8
+order: 7
 section: 'Basic components'
 description: 'Adding styling to React Native components'
 ---
