@@ -1,7 +1,7 @@
 ---
 path: '/navigation-exercise-solution'
 title: 'Navigation Exercise Solution 👀'
-order: 20
+order: 21
 section: 'Navigation'
 description: 'Navigation exercise solution'
 ---

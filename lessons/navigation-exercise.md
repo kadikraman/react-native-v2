@@ -1,7 +1,7 @@
 ---
 path: '/navigation-exercise'
 title: 'Navigation Exercise 📝'
-order: 19
+order: 20
 section: 'Navigation'
 description: 'Navigation exercise: we navigate to a new page to view palette details'
 ---

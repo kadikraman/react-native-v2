@@ -6,7 +6,7 @@ section: 'Introduction'
 description: 'We discuss the benefits and drawback of using Expo'
 ---
 
-If you've been eyeing up the React Native space already, you've probably heard of Expo. Expo is essentially a suite of tools build for and around React Native, designed to improve and enhance the developer experience. They are a separate company, not affiliated with Facebook.
+If you've been eyeing up the React Native space already, you've probably heard of [Expo](https://expo.io/). Expo is essentially a suite of tools build for and around React Native, designed to improve and enhance the developer experience. They are a separate company, not affiliated with Facebook.
 
 Some people have strong options on whether or not they want to use Expo for React Native, and if you're one of those people, feel free to skip this and carry on with your preference. This is an introductory workshop and can be followed with Expo and without. However if you don't have any strong opinions on this and need help deciding, read on!
 

@@ -1,7 +1,7 @@
 ---
 path: '/react-hooks'
 title: 'useState, useCallback, useEffect'
-order: 21
+order: 22
 section: 'Hooks and Network Requests'
 description: 'We talk about React Hooks and cover the main ones'
 ---

@@ -1,7 +1,7 @@
 ---
 path: '/styling-exercise-solution'
 title: 'Styling Exercise Solution 👀'
-order: 10
+order: 11
 section: 'Basic components'
 description: 'Styling exercise solution'
 ---

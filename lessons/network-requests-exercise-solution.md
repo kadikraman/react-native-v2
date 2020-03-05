@@ -1,7 +1,7 @@
 ---
 path: '/network-requests-exercise-solution'
 title: 'Network Requests Exercise 👀'
-order: 23
+order: 24
 section: 'Hooks and Network Requests'
 description: 'Network requests exercise solution'
 ---

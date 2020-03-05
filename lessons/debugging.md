@@ -1,7 +1,7 @@
 ---
 path: '/debugging'
 title: 'Debugging'
-order: 5
+order: 6
 section: 'Setup'
 description: 'Debugging tools and tips'
 ---

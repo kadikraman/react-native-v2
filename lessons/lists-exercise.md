@@ -1,7 +1,7 @@
 ---
 path: '/lists-exercise'
 title: 'Lists Exercise 📝'
-order: 13
+order: 14
 section: 'Basic components'
 description: 'Lists exercise: converting our color boxes to use FlatList'
 ---

@@ -62,7 +62,7 @@ First, connect your phone to your MacBook. If you've never done this before, you
     <img alt="iTunes permission dialog" src="./images/itunes-permission.png" />
 </div>
 
-After you click "continue", you should get an alert on your phone asking you to confirm. If you missed the alerts or pressed "no" by accident, just unplug and plug in your phone again to be re-prompted.
+After you click "continue", you should get an alert on your phone asking you to confirm. If you missed the alert or pressed "no" by accident, just unplug and plug in your phone again to be re-prompted.
 
 Now you'll need to find you your phone's name. To do this, open your terminal (with the phone plugged in) and do:
 
@@ -70,7 +70,7 @@ Now you'll need to find you your phone's name. To do this, open your terminal (w
 instruments -s devices
 ```
 
-This will list all the devices (real and simulated) available on your computer. I never change my phone's name, so it's set at the default: "Kadi’s iPhone" (notice the fancy `’` - this is important).
+This will list all the devices (real and simulated) available on your computer. I never changes my phone's name, so it's set at the default: "Kadi’s iPhone" (notice the fancy `’` - this is important).
 
 Now open the terminal in your project root directory (inside AwesomeProject) and run
 
@@ -114,4 +114,18 @@ For any platform-specific issues and nuances, consult the [documentation](https:
 
 You may have noticed we've been saying "iPhone Simulator" and "Android Emulator". This is intentional. The difference between emulators and simulators is that emulators mimic the software and hardware environments found on actual devices. Simulators, on the other hand, only mimic the software environment; they otherwise have access to all of the host system's hardware resources such as disk space, memory and processor speed. This means that on Android Emulators, you can be reasonably confident that the physical device will act similarly to the emulator. iPhone simulators however are free from hardware constraints such as running out of memory. This is why it's important to test your iPhone app on a real device if at all possible before publishing to the store.
 
-// TODO look into folder structure
+## Folder Structure
+
+Your folder structure looks a little something like this:
+
+<div style="width:300px;margin:0 auto;margin-bottom:20px">
+    <img alt="React Native Folder Structure" src="./images/rn-folder-structure.png" />
+</div>
+
+If you also looked at the [Expo setup guide](./setup-expo) you'll notice that there's a lot more going on in this template. Here are the highlights:
+
+- `index.js` - this is the main entry point of your application. It is equivalent to React on the web mounting the project to the root DOM node
+- `App.js` - this is the file that _we_ care the most about. This is where we'll be writing all our code
+- `/android` and `/ios` - these are the folders where all the native code lives. If we needed to add or edit any platform specific native code, this is where we'd have to look. We also need to go into these folders if we have to install any native libraries
+- `.buckconfig` and `.flowconfig` - the facebook react native template comes with flow pre-installed. Using this is optional though and we will be sticking with plain React Native in this workshop.
+- `.prettierrc.js` this is a code formatter which is again optional, but you can read more about it in our [code style](./code-style) chapter

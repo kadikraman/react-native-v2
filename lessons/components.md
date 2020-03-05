@@ -1,7 +1,7 @@
 ---
 path: '/components'
 title: 'Components'
-order: 11
+order: 12
 section: 'Basic components'
 description: 'We talk about components in React Native'
 ---

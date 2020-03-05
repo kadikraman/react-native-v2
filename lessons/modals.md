@@ -1,7 +1,7 @@
 ---
 path: '/modals'
 title: 'Opening a full screen modal'
-order: 26
+order: 27
 section: 'Forms'
 description: 'Opening a full screen modal'
 ---

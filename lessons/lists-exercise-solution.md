@@ -1,7 +1,7 @@
 ---
 path: '/lists-exercise-solution'
 title: 'Lists Exercise Solution 👀'
-order: 14
+order: 15
 section: 'Basic components'
 description: 'Solution to the lists exercise'
 ---

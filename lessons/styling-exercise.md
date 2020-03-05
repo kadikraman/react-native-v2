@@ -1,7 +1,7 @@
 ---
 path: '/styling-exercise'
 title: 'Styling Exercise 📝'
-order: 9
+order: 10
 section: 'Basic components'
 description: 'Styling challenge: creating some colored boxes'
 ---

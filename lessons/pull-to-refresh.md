@@ -1,7 +1,7 @@
 ---
 path: '/pull-to-refresh'
 title: 'Pull to refresh'
-order: 24
+order: 25
 section: 'Hooks and Network Requests'
 description: 'We add a loading spinner for fetching and re-fetching'
 ---

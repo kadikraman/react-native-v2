@@ -1,7 +1,7 @@
 ---
 path: '/adding-navigation'
 title: 'Adding Navigation'
-order: 18
+order: 19
 section: 'Navigation'
 description: 'We use react-navigation to navigate to a new page and back'
 ---
