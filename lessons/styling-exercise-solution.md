@@ -1,31 +1,10 @@
 ---
 path: '/styling-exercise-solution'
 title: 'Styling Exercise Solution 👀'
-order: 11
+order: 10
 section: 'Basic components'
 description: 'Styling exercise solution'
 ---
-
-Lets start from a clean slate again.
-
-Delete all the code in your `App.js` and replace it with the Hello World template we used earlier:
-
-```js
-import React from 'react';
-import { View, Text, SafeAreaView, StyleSheet } from 'react-native';
-
-const App = () => {
-  return (
-    <SafeAreaView>
-      <View>
-        <Text>Hello, world!</Text>
-      </View>
-    </SafeAreaView>
-  );
-};
-
-export default App;
-```
 
 Now the first thing you'll want to do is add some padding to the container. Let's to 50 from the top and 10 from the sides:
 
@@ -140,7 +119,7 @@ const styles = StyleSheet.create({
 export default App;
 ```
 
-This is looking good, but you might have noticed there are a lot of repeated styles between the two boxes and this can get cumbersome pretty quickly. Thankfully there is a way around this. The `style` prop also accepts an _array_ of styles, so instead of `style={styles.cyanBox}` we could pass in two sets of styles: `style={[styles.box, styles.cyan]}`.
+This is looking good, but you might have noticed there are a lot of repeated styles between the two boxes and this can get cumbersome pretty quickly. Lets break these out and use the style array instead:
 
 ```js
 <View style={[styles.box, styles.cyan]}>
@@ -169,4 +148,6 @@ blue: {
 
 Finally add boxes for the remaining colours (magenta and orange) the same way, and we're all done!
 
-[🔗 RN 6e25403](https://github.com/kadikraman/AwesomeProjectRN/commit/6e25403f495a7cf7cc70cd5f177ce01379300556)
+[🔗 Expo b12c0f43f24a77c62699e216705d5311ac8e942d](https://github.com/kadikraman/AwesomeProjectExpo/commit/b12c0f43f24a77c62699e216705d5311ac8e942d)
+
+[🔗 RN df8184f4c4d0695a683df85009b4e808cad4cc5d](https://github.com/kadikraman/AwesomeProjectExpo/commit/df8184f4c4d0695a683df85009b4e808cad4cc5d)

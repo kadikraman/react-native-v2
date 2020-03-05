@@ -1,7 +1,7 @@
 ---
 path: '/adding-navigation'
 title: 'Adding Navigation'
-order: 19
+order: 18
 section: 'Navigation'
 description: 'We use react-navigation to navigate to a new page and back'
 ---
@@ -152,4 +152,6 @@ const Home = ({ navigation }) => {
 };
 ```
 
-[🔗 RN 0f38a55](https://github.com/kadikraman/AwesomeProjectRN/commit/0f38a5540eaebf3ef8e5418cee37cd9255598da3)
+[🔗 Expo f4df234627b546758e8b573f43286e0ca73cc46b](https://github.com/kadikraman/AwesomeProjectExpo/commit/f4df234627b546758e8b573f43286e0ca73cc46b)
+
+[🔗 RN cfdef69d85efcd0967ee35c795fc64906e2bf2c8](https://github.com/kadikraman/AwesomeProjectRN/commit/cfdef69d85efcd0967ee35c795fc64906e2bf2c8)

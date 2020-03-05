@@ -1,7 +1,7 @@
 ---
 path: '/navigation-intro'
 title: 'Navigation Into'
-order: 16
+order: 15
 section: 'Navigation'
 description: 'Introduction to navigation'
 ---

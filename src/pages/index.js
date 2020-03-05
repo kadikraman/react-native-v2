@@ -1,8 +1,8 @@
-import React from "react";
-import { StaticQuery, graphql } from "gatsby";
-import Card from "../components/TOCCard";
+import React from 'react';
+import { StaticQuery, graphql } from 'gatsby';
+import Card from '../components/TOCCard';
 
-import "./index.css";
+import './index.css';
 
 const IndexPage = () => (
   <StaticQuery

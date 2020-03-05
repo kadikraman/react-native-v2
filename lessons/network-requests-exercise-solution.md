@@ -1,12 +1,14 @@
 ---
 path: '/network-requests-exercise-solution'
-title: 'Network Requests Exercise 👀'
-order: 24
+title: 'Network Requests Exercise Solution 👀'
+order: 23
 section: 'Hooks and Network Requests'
 description: 'Network requests exercise solution'
 ---
 
-[🔗 RN 657a889](https://github.com/kadikraman/AwesomeProjectRN/commit/657a8893066e7d3f197941d569c4393ba5321274)
+[🔗 Expo 7d9e2920cce72f29547d8f6b113a31dac44da696](https://github.com/kadikraman/AwesomeProjectExpo/commit/7d9e2920cce72f29547d8f6b113a31dac44da696)
+
+[🔗 RN 6cbb5e4895a2c8e65928cf998865a5d1062bc6bc](https://github.com/kadikraman/AwesomeProjectRN/commit/6cbb5e4895a2c8e65928cf998865a5d1062bc6bc)
 
 In this exercise, we've used all 3 hooks we just learnt about!
 

@@ -1,12 +1,14 @@
 ---
 path: '/styling-exercise'
 title: 'Styling Exercise 📝'
-order: 10
+order: 9
 section: 'Basic components'
 description: 'Styling challenge: creating some colored boxes'
 ---
 
-The best way to learn is by doing so let's start off by adding some colour. Here's a little app I built, showcasing come of my favourite colours. Try to recreate it! Here are the colours I used:
+The best way to learn is by doing so let's start off by adding some colour. Here's a little app I built, showcasing come of my favourite colours. Try to recreate it!
+
+Here are the colours I used:
 
 ```
 Cyan: #2aa198

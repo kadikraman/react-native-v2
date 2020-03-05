@@ -1,7 +1,7 @@
 ---
 path: '/components'
 title: 'Components'
-order: 12
+order: 11
 section: 'Basic components'
 description: 'We talk about components in React Native'
 ---
@@ -54,7 +54,9 @@ import ColorBox from './components/ColorBox';
 
 Now you should be able to see the text "I am a color box" in your app just under the last box!
 
-[🔗 RN 25ec4f9](https://github.com/kadikraman/AwesomeProjectRN/commit/25ec4f94f91f27a334290c84010a99391485a4a5)
+[🔗 Expo 15c2fda13a771ddb0923ebf536c493fbc32d6f90](https://github.com/kadikraman/AwesomeProjectExpo/commit/15c2fda13a771ddb0923ebf536c493fbc32d6f90)
+
+[🔗 RN 19af3bead2ec10cb93c96f3805590ee38c3a434c](https://github.com/kadikraman/AwesomeProjectRN/commit/19af3bead2ec10cb93c96f3805590ee38c3a434c)
 
 ## Props
 
@@ -125,9 +127,8 @@ const styles = StyleSheet.create({
 export default ColorBox;
 ```
 
-[🔗 RN a4d5d24](https://github.com/kadikraman/AwesomeProjectRN/commit/a4d5d240555f97bba03c894a33ca4dcd7a30b940)
-
 Finally, replace update all the existing colour boxes to use our new component and remove unused code, and we're done! The app looks the same, but our code is a whole lot cleaner.
 
-[🔗 RN 0cac473](https://github.com/kadikraman/AwesomeProjectRN/commit/0cac473fef5ad176928249b83bd6aa8e6abf547e)
+[🔗 Expo 51f04c9bd3d42d7518882686c0593156dd1773ac](https://github.com/kadikraman/AwesomeProjectExpo/commit/51f04c9bd3d42d7518882686c0593156dd1773ac)
 
+[🔗 RN a4ed9cd18fc164c560d3537f82c9a94d17c91441](https://github.com/kadikraman/AwesomeProjectRN/commit/a4ed9cd18fc164c560d3537f82c9a94d17c91441)

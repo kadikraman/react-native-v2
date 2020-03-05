@@ -1,6 +1,6 @@
-import React from "react";
-import Link from "gatsby-link";
-import { graphql } from "gatsby";
+import React from 'react';
+import Link from 'gatsby-link';
+import { graphql } from 'gatsby';
 
 export default function Template(props) {
   let { markdownRemark, allMarkdownRemark } = props.data; // data.markdownRemark holds our post data
@@ -14,10 +14,12 @@ export default function Template(props) {
           allMarkdownRemark.edges[frontmatter.order - 1].node.frontmatter.path
         }
       >
-        {"← " +
+        {'← ' +
           allMarkdownRemark.edges[frontmatter.order - 1].node.frontmatter.title}
       </Link>
-    ) : <span />;
+    ) : (
+      <span />
+    );
   const nextLink =
     frontmatter.order + 1 < allMarkdownRemark.edges.length ? (
       <Link
@@ -27,9 +29,11 @@ export default function Template(props) {
         }
       >
         {allMarkdownRemark.edges[frontmatter.order + 1].node.frontmatter.title +
-          " →"}
+          ' →'}
       </Link>
-    ) : <span />;
+    ) : (
+      <span />
+    );
   return (
     <div className="lesson-container">
       <div className="lesson">

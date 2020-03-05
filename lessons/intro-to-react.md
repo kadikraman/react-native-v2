@@ -49,6 +49,60 @@ There are a couple of important differences here. We can't use `div`, `span`, `p
 
 - `<View>` - if you're already familiar with web development, you can think of `<View>` as a native equivalent to `<div>`. It's a container to use for styling and positioning the elements within.
 
+- `<ScrollView>` - pages do not scroll by default. If you have lots of content to display, you can use a `ScrollView`
+
 - `<Text>` - the `<Text>` component is used for displaying, you guessed it, text! In React Native, all text you want to display _must_ be contained in `<Text>` tags or you'll have errors.
 
-React in the web has a root component that binds to a single node in the DOM. React Native works differently, but suffice it to say that the app entry point is the `App.js` in the root directory.
+Now that we've got some components to work with - let's get coding!
+
+## Basic Components and SafeAreaView
+
+Open your `App.js`, delete the content and replace it with our "Hello, World" template.
+
+```js
+// App.js
+
+import React from 'react';
+import { View, Text } from 'react-native';
+
+const App = () => {
+  return (
+    <View>
+      <Text>Hello, world!</Text>
+    </View>
+  );
+};
+
+export default App;
+```
+
+How does it look? Not great I imagine. You might notice that the text is overlaid by the notification bar at the top of the screen. You could add some padding to the top of the screen, but that wouldn't serve for a general solution - while it might work for the phone you're testing on for the moment, there are tends of iPhones and hundreds of Android phones with different specs.
+
+Thankfully there is something handy built into React Native to help with this. `SafeAreaView` is a component that automatically adds the necessary padding around your content to ensure that you don't overlap with the top and bottom of the screen. This was especially handy when iPhone X came out, as it handles the bottom spacing necessary for the notch.
+
+All you need to do is to import the `SafeAreaView` from `react-native` and wrap your content around it like so:
+
+```js
+// App.js
+
+import React from 'react';
+import { View, Text, SafeAreaView } from 'react-native';
+
+const App = () => {
+  return (
+    <SafeAreaView>
+      <View>
+        <Text>Hello, world!</Text>
+      </View>
+    </SafeAreaView>
+  );
+};
+
+export default App;
+```
+
+Great! Now you can be confident your content will be visible regardless of the device.
+
+[🔗 Expo 49584b83f6871b73bd3fc6219db048e0875e8f53](https://github.com/kadikraman/AwesomeProjectRN/commit/49584b83f6871b73bd3fc6219db048e0875e8f53)
+
+[🔗 RN 43e1c4d6ae62f4befb51857fa4b95b1c14ddd3de](https://github.com/kadikraman/AwesomeProjectExpo/commit/43e1c4d6ae62f4befb51857fa4b95b1c14ddd3de)

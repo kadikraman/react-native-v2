@@ -1,14 +1,14 @@
 ---
 path: '/react-hooks'
 title: 'useState, useCallback, useEffect'
-order: 22
+order: 21
 section: 'Hooks and Network Requests'
 description: 'We talk about React Hooks and cover the main ones'
 ---
 
 React hooks were added to React in v16.8.0 and React Native in v0.59. Hooks are a built in system for managing state and side-effects in function components. The introduction of hooks was hugley exciting for the community, because before hooks, the only way to do anything even mildly complicated like save component state or do network request, you would have had to use a class component, or wire up redux and thunks or sagas. This is no longer the case! A lot of modern React and React Native applications are written using just function components and React hooks!
 
-Hooks inside React native work _exactly_ the same\_ as in React Native, so if you already know about hooks, you're good to go! Also for any documentation on how hooks you can refer to the [react](https://reactjs.org/docs/hooks-intro.html) documentation.
+Hooks inside React native work _exactly_ the same as in React Native, so if you already know about hooks, you're good to go! Refer to the [react](https://reactjs.org/docs/hooks-intro.html) documentation on hooks for more info.
 
 For the majority of use-cases, the only hooks you need are `useState`, `useCallback` and `useEffect`. Let's look into these in detail.
 

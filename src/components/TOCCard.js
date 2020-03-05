@@ -1,7 +1,7 @@
-import React from "react";
-import Link from "gatsby-link";
+import React from 'react';
+import Link from 'gatsby-link';
 
-import "./TOCCard.css";
+import './TOCCard.css';
 
 const LessonCard = ({ content, title }) => {
   const sections = content

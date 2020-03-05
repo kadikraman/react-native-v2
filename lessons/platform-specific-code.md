@@ -1,7 +1,7 @@
 ---
 path: '/platform-specific-code'
 title: 'Platform Specific Code'
-order: 31
+order: 30
 section: 'Extra Credit'
 description: 'Platform specific code: how to write code that targets a specific platform'
 ---

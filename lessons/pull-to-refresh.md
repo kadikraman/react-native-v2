@@ -1,7 +1,7 @@
 ---
 path: '/pull-to-refresh'
 title: 'Pull to refresh'
-order: 25
+order: 24
 section: 'Hooks and Network Requests'
 description: 'We add a loading spinner for fetching and re-fetching'
 ---
@@ -54,4 +54,6 @@ setTimeout(() => {
 }, 1000);
 ```
 
-[🔗 RN 00b3292](https://github.com/kadikraman/AwesomeProjectRN/commit/00b329244904b84db00123c197304e30f32f70da)
+[🔗 Expo 899a3cefa738543f6e7d2782bb6833539f27166c](https://github.com/kadikraman/AwesomeProjectExpo/commit/899a3cefa738543f6e7d2782bb6833539f27166c)
+
+[🔗 RN 14e0ae8a3dc7c2922fb0a4ce984e2e9d74ed9b77](https://github.com/kadikraman/AwesomeProjectRN/commit/14e0ae8a3dc7c2922fb0a4ce984e2e9d74ed9b77)

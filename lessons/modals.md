@@ -1,7 +1,7 @@
 ---
 path: '/modals'
 title: 'Opening a full screen modal'
-order: 27
+order: 26
 section: 'Forms'
 description: 'Opening a full screen modal'
 ---
@@ -23,12 +23,16 @@ Our current layout only has the RootStack, HomeScreen, and DetailsScreen, so we 
 First lets rename our Stack to RootStack:
 
 ```js
+// App.js
+
 const RootStack = createStackNavigator();
 ```
 
 Now let's add the MainStack and pull our existing navigation all out of the App component and into it's own MainStackScreen component:
 
 ```js
+// App.js
+
 const MainStackScreen = () => {
   return (
     <MainStack.Navigator>
@@ -46,6 +50,8 @@ const MainStackScreen = () => {
 Finally, update the App component to use RootStack and MainStackScreen
 
 ```js
+// App.js
+
 const App = () => {
   return (
     <NavigationContainer>

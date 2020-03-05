@@ -58,6 +58,8 @@ At this point you should see something like this:
 
 And that's it! You're ready to start coding!
 
+[🔗 Expo dd3bca50a532c90902252a3e9dcd0ef608000ee8](https://github.com/kadikraman/AwesomeProjectExpo/commit/dd3bca50a532c90902252a3e9dcd0ef608000ee8)
+
 ## Folder Structure
 
 Let's have a look at what the plain Expo application template looks like:

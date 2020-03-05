@@ -1,7 +1,7 @@
 ---
 path: '/ejecting-from-expo'
 title: '[Expo] Ejecting from Expo'
-order: 30
+order: 29
 section: 'Extra Credit'
 description: 'Why and how you might need or want to eject from Expo'
 ---

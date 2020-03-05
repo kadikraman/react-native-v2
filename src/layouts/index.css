@@ -53,10 +53,10 @@ p {
 .lesson-links {
   display: flex;
   justify-content: space-between;
-  margin-top: 20px;
+  margin-top: 100px;
   margin-bottom: 20px;
 }
 
 .gatsby-highlight {
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }

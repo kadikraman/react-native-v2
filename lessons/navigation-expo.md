@@ -1,7 +1,7 @@
 ---
 path: '/navigation-expo'
 title: '[Expo] Adding navigation with Expo'
-order: 18
+order: 16
 section: 'Navigation'
 description: 'Adding Expo Navigation'
 ---
@@ -33,3 +33,7 @@ export default App;
 ```
 
 Specifically, you are importing the `NavigationContainer` from the navigation library we just installed, and wrapping the whole application in it. That's it! We're ready to start navigating.
+
+There won't be any UI changes after this change. We're just setting things up for the next step.
+
+[🔗 Expo fe48ac7768b92ea954b3333c09f7f7b62fa2b8ba](https://github.com/kadikraman/AwesomeProjectExpo/commit/fe48ac7768b92ea954b3333c09f7f7b62fa2b8ba)

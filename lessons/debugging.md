@@ -6,7 +6,7 @@ section: 'Setup'
 description: 'Debugging tools and tips'
 ---
 
-As developers, we spend a whole lot of time debugging, especially when learning something new. Here are some debugging tips for React Native.
+As developers, we spend a whole lot of time debugging, especially when learning something new. Let's look at some debugging tips for React Native.
 
 ### Debug menu
 
@@ -37,16 +37,18 @@ The main options you'll use are:
 
 ### console.log() debugging
 
-The easiest and most straightforward way to debug things is always the good old trusted logger! The good news is that console.log() works just the same on React Native as in plain JavaScript.
+Sometimes it's just good to log stuff out to see what's going on. The good news is that `console.log()` works just the same on React Native as in plain JavaScript.
 
 In order to log out to the console:
 
-1. open the debug menu (as described above) and turn on the debug. This will open a new browser window
+1. open the debug menu (as described above) and turn on debug - this will open a new browser window
 2. inspect the browser window (right click + inspect for most browsers)
 3. `console.log()` something in your app
-4. the logged out text will appear in the browser console!
+4. the logged out text will appear in the browser console
 
 Note:
 
 - `console.warn` will show a yellow box warning in React Native
 - `console.error` will show a full screen error
+
+Note: there is a known bug in [VSCode](https://github.com/microsoft/TypeScript/issues/30471) where typing in console incorrectly auto imports `import console=require('console');`. You can get around this by turning off auto imports. Go to code => preferences => settings => auto imports to do this.

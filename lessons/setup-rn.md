@@ -114,6 +114,8 @@ For any platform-specific issues and nuances, consult the [documentation](https:
 
 You may have noticed we've been saying "iPhone Simulator" and "Android Emulator". This is intentional. The difference between emulators and simulators is that emulators mimic the software and hardware environments found on actual devices. Simulators, on the other hand, only mimic the software environment; they otherwise have access to all of the host system's hardware resources such as disk space, memory and processor speed. This means that on Android Emulators, you can be reasonably confident that the physical device will act similarly to the emulator. iPhone simulators however are free from hardware constraints such as running out of memory. This is why it's important to test your iPhone app on a real device if at all possible before publishing to the store.
 
+[🔗 RN 0a65fa34b6d9f0186c38d78f2e18e2cf0bfc3ca2](https://github.com/kadikraman/AwesomeProjectRN/commit/0a65fa34b6d9f0186c38d78f2e18e2cf0bfc3ca2)
+
 ## Folder Structure
 
 Your folder structure looks a little something like this:

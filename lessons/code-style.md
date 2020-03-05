@@ -6,7 +6,9 @@ section: 'Setup'
 description: 'We talk about the importance of consistent code style and install a linter'
 ---
 
-Adding a linter to your React Native project is a highly encouraged. Not only does it help ensure a consistent code style throughout the project, it also highlights errors and often uncovers bad practices. I always set up linting and code formatting from the onset when starting a new project, even if it's just personal or a hobby project!
+This step is optional. If you want to just get stuck in the code, feel free to skip this.
+
+Adding a linter to your React Native project is not mandatory, but highly encouraged. Not only does it help ensure a consistent code style throughout the project, it also highlights errors and often uncovers bad practices. I always set up linting and code formatting from the onset when starting a new project, even if it's just personal or a hobby project!
 
 The go-to linter for JavaScript is called [eslint](https://eslint.org/). There are three main reasons you should always install a linter:
 
@@ -42,7 +44,7 @@ You can always configure your own linting rules of course, but I like to start w
 
 We've now installed both eslint and the community preset, but the eslint package doesn't know about the preset. In order to make eslint aware of this, we need to add a configuration file.
 
-Create a new file in the root directory of your project and call it `.eslintrc.js` (yes, the filename starts with a `.`)
+Create a new file in the root directory of your project and call it `.eslintrc.js` (yes, the filename starts with a `.`). If you used `react-native init` to create your project, then you'll already have this file, but with Expo you'll have to create it.
 
 Open the file and add the following:
 
@@ -61,7 +63,7 @@ The community package actually comes with prettier pre-installed. Prettier is an
 
 Prettier has very few configuration options, because their mentality is to have as few variations as possible. I am definitely guilty of having a preference here. If you'd like your code to look exactly like mine in the example, add these prettier settings.
 
-Create another file in the root directory of your project and call it `.prettierrc`
+Create another file in the root directory of your project and call it `.prettierrc` (you'll already have this file as well if you used `react-native init`)
 
 Open the file and add the following:
 
@@ -102,3 +104,7 @@ Code => Preferences => Extentions => ESLint
 Atom => Preferences => Install => linter-eslint
 
 You may have to close and reopen your code editor for the package to start working, but that's it! You now have the optimal working environment.
+
+[🔗 Expo c4463a28410a10b295fe76c9a273a7c3ae5dc76c](https://github.com/kadikraman/AwesomeProjectExpo/commit/c4463a28410a10b295fe76c9a273a7c3ae5dc76c)
+
+[🔗 RN 4822e123aa0e9d2892970a74065f2dc15ebec6e6](https://github.com/kadikraman/AwesomeProjectRN/commit/4822e123aa0e9d2892970a74065f2dc15ebec6e6)
