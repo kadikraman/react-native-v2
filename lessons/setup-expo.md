@@ -57,3 +57,6 @@ At this point you should see something like this:
 </div>
 
 And that's it! You're ready to start coding!
+
+
+// TODO look into folder structure

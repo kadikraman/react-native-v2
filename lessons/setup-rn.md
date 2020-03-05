@@ -104,13 +104,14 @@ In order to run your app on your device:
 
 1. close the Android emulator (if you had it open)
 2. plug in your phone via USB
-3. enable USB debugging*
+3. enable USB debugging\*
 
-__*__ To enable USB debugging on your device, you will first need to enable the "Developer options" menu by going to Settings → About phone and then tapping the Build number row at the bottom seven times. You can then go back to Settings → Developer options to enable "USB debugging".
+**\*** To enable USB debugging on your device, you will first need to enable the "Developer options" menu by going to Settings → About phone and then tapping the Build number row at the bottom seven times. You can then go back to Settings → Developer options to enable "USB debugging".
 
 For any platform-specific issues and nuances, consult the [documentation](https://reactnative.dev/docs/running-on-device).
 
-
 ### Emulator vs Simulator
 
-You may have noticed we've been saying "iPhone Simulator" and "Android Emulator". This is intentional. The difference between emulators and simulators is that emulators mimic the software and hardware environments found on actual devices. Simulators, on the other hand, only mimic the software environment; they otherwise have access to all of the host system's hardware resources such as disk space, memory and processor speed. This means that on Android Emulators, you can be reasonably confident that the physical device will act similarly to the emulator. iPhone simulators however  are free from hardware constraints such as running out of memory. This is why it's important to test your iPhone app on a real device if at all possible before publishing to the store.
+You may have noticed we've been saying "iPhone Simulator" and "Android Emulator". This is intentional. The difference between emulators and simulators is that emulators mimic the software and hardware environments found on actual devices. Simulators, on the other hand, only mimic the software environment; they otherwise have access to all of the host system's hardware resources such as disk space, memory and processor speed. This means that on Android Emulators, you can be reasonably confident that the physical device will act similarly to the emulator. iPhone simulators however are free from hardware constraints such as running out of memory. This is why it's important to test your iPhone app on a real device if at all possible before publishing to the store.
+
+// TODO look into folder structure
