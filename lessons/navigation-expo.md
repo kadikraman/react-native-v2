@@ -1,7 +1,7 @@
 ---
 path: '/navigation-expo'
 title: '[Expo] Adding navigation with Expo'
-order: 15
+order: 17
 section: 'Navigation'
 description: 'Adding Expo Navigation'
 ---

@@ -1,7 +1,7 @@
 ---
 path: '/lists'
 title: 'Lists'
-order: 11
+order: 12
 section: 'Basic components'
 description: 'Adding lists to React Native components'
 ---

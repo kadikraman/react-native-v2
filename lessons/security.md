@@ -1,7 +1,7 @@
 ---
 path: '/security'
 title: 'Security'
-order: 28
+order: 32
 section: 'Extra Credit'
 description: 'Common security mistakes in React Native'
 ---

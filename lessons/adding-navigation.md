@@ -1,7 +1,7 @@
 ---
 path: '/adding-navigation'
 title: 'Adding Navigation'
-order: 16
+order: 18
 section: 'Navigation'
 description: 'Adding navigation to a new page'
 ---
