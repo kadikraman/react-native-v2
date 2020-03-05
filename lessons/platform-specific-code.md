@@ -3,7 +3,7 @@ path: '/platform-specific-code'
 title: 'Platform Specific Code'
 order: 31
 section: 'Extra Credit'
-description: 'How to write code that only gets run on one platform or the other'
+description: 'Platform specific code: how to write code that targets a specific platform'
 ---
 
 Although most of the time, one codebase for two apps works like a charm, there can be times when you'll want to show one thins on Android and another on iOS. This is usually when sing some native library that is only available on one of the platforms, e.g. [DatePickeriOS](https://reactnative.dev/docs/datepickerios) or [DrawerLayoutAndroid](https://reactnative.dev/docs/drawerlayoutandroid), or some minor updates like colors or fonts. You may have noticed that colors can look a bit duller on Android screens and sometimes you may want to adjust for that.

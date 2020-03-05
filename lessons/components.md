@@ -3,7 +3,7 @@ path: '/components'
 title: 'Components'
 order: 11
 section: 'Basic components'
-description: 'Something something components'
+description: 'We talk about components in React Native'
 ---
 
 React (Native) is a component-based framework. This means that your app is made from lots of components that are nested within each other. You're always have one root component (in our case it is our App component), but inside it we can have as many big or small components as we'd like.

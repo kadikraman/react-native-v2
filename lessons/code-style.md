@@ -3,7 +3,7 @@ path: '/code-style'
 title: 'Adding a linter'
 order: 29
 section: 'Extra Credit'
-description: 'Kadi explains the importance of consistent code style and we install a linter'
+description: 'We talk about the importance of consistent code style and install a linter'
 ---
 
 Adding a linter to your React Native project is a highly encouraged. Not only does it help ensure a consistent code style throughout the project, it also highlights errors and often uncovers bad practices. I always set up linting and code formatting from the onset when starting a new project, even if it's just personal or a hobby project!

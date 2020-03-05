@@ -3,7 +3,7 @@ path: '/security'
 title: 'Security'
 order: 32
 section: 'Extra Credit'
-description: 'Common security mistakes in React Native'
+description: 'Common security concerns in React Native'
 ---
 
 Note: these security docs will soon be part of the official React Native docs [once my PR gets merged](https://github.com/facebook/react-native-website/pull/1633). For now, I have copied the content here.

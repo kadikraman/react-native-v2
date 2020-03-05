@@ -3,7 +3,7 @@ path: '/intro'
 title: 'Welcome'
 order: 0
 section: 'Introduction'
-description: 'Kadi will talk about why React Native is a good choice of technology for building mobile applications'
+description: 'Course guidelines and objectives'
 ---
 
 Hi there, and welcome to React Native v2! 👋

@@ -3,7 +3,7 @@ path: '/adding-navigation'
 title: 'Adding Navigation'
 order: 18
 section: 'Navigation'
-description: 'Adding navigation to a new page'
+description: 'We use react-navigation to navigate to a new page and back'
 ---
 
 There are two main types of navigation on mobile: bottom navigation, and stack navigation. You've certainly seen bottom navigation before, most apps have it: these are navigation items at the bottom of the screen and allow you to navigate between different sections of the app. Open the Twitter app for instance. (If you don't use Twitter, open Facebook, Instagram, Headspace, Spotify - most any app really, they all work the same regardless of whether they're build with React Native or not) Notice we have 4 bottom navigation items: home, search, notifications and messages. Notice also that navigating between them is pretty instant. When the app is launched, _all_ the root pages of the bottom navigation get rendered at once. This is something to be mindful of if you're doing a lot of network requests on your root pages.

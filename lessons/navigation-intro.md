@@ -3,7 +3,7 @@ path: '/navigation-intro'
 title: 'Navigation Into'
 order: 15
 section: 'Navigation'
-description: 'Intro to navigation'
+description: 'Introduction to navigation'
 ---
 
 Now it's time to add navigation to our app. Let's start with adding a new page where we could list _multiple_ color schemes as a list, and then navigate to a new page to view their details.

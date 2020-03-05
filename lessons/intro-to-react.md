@@ -3,7 +3,7 @@ path: '/intro-to-react'
 title: 'Basic React Native components'
 order: 6
 section: 'Basic components'
-description: 'We get started with the basic building blocks of a React Native application'
+description: 'Quick intro to React and the basic building blocks of React Native: View, Text and ScrollView'
 ---
 
 If you're already familiar with React then you've got a head start, lucky you! Before we dive into React Native, let's start by looking at this "hello world" React component:

@@ -3,7 +3,7 @@ path: '/styling'
 title: 'Styling'
 order: 8
 section: 'Basic components'
-description: 'Adding styling to React Native components'
+description: 'We talk about styling React Native components'
 ---
 
 In React Native, all styling is done using inline styles. Let's start by adding some spacing around our content. Import `StyleSheet` from `react-native` and create a styles constant at the bottom of the file:

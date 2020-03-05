@@ -3,7 +3,7 @@ path: '/styling-exercise-solution'
 title: 'Styling Exercise Solution 👀'
 order: 10
 section: 'Basic components'
-description: 'We look at the solution for the styling exercise'
+description: 'Styling exercise solution'
 ---
 
 Lets start from a clean slate again.

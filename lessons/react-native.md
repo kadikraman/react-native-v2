@@ -3,7 +3,7 @@ path: '/react-native'
 title: 'About React Native'
 order: 1
 section: 'Introduction'
-description: 'Kadi talks about the history of React Native, why was it created and how does it work'
+description: 'Kadi talks about the history of React Native, why was it created and how it works on a high level'
 ---
 
 <div style="width:500px;margin:0 auto;margin-bottom:20px;">

@@ -3,7 +3,7 @@ path: '/ejecting-from-expo'
 title: '[Expo] Ejecting from Expo'
 order: 30
 section: 'Extra Credit'
-description: 'How and why you might need or want to eject from Expo'
+description: 'Why and how you might need or want to eject from Expo'
 ---
 
 Living in the Expo sandbox is fantastic, especially when you're just getting started, prototyping, or building MVPs. There are restrictions that come with all this convenience however, the main one is not being able to use any native libraries that are not already built into Expo.

@@ -3,7 +3,7 @@ path: '/forms'
 title: 'Overview of Forms in React Native'
 order: 25
 section: 'Forms'
-description: 'Overview of Forms in React Native'
+description: 'Overview of form elements in React Native'
 ---
 
 Forms in React Native are just a collection of inputs. Whereas on the web we have a `<form>` element and a submit button, this is not the case in React Native. Let's looks at some of the inputs we have available.

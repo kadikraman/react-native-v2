@@ -3,7 +3,7 @@ path: '/lists-exercise-solution'
 title: 'Lists Exercise Solution 👀'
 order: 14
 section: 'Basic components'
-description: 'Lists exercise solution'
+description: 'Solution to the lists exercise'
 ---
 
 [🔗 RN 6edd87e](https://github.com/kadikraman/AwesomeProjectRN/commit/6edd87e4cc8b661f10c3cf87c1486b0a116fc368)

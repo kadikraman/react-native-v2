@@ -3,7 +3,7 @@ path: '/navigation-exercise-solution'
 title: 'Navigation Exercise Solution 👀'
 order: 20
 section: 'Navigation'
-description: 'Passing parameters'
+description: 'Navigation exercise solution'
 ---
 
 ## Navigation Exercise Solution - Part 1

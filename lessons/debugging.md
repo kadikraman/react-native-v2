@@ -3,7 +3,7 @@ path: '/debugging'
 title: 'Debugging'
 order: 5
 section: 'Setup'
-description: 'How to debug code'
+description: 'Debugging tools and tips'
 ---
 
 As developers, we spend a whole lot of time debugging, especially when learning something new. Here are some debugging tips for React Native.

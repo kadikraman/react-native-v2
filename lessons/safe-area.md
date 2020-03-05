@@ -3,7 +3,7 @@ path: '/safe-area'
 title: 'Safe Area'
 order: 7
 section: 'Basic components'
-description: 'Using SafeAreaView to target to ensure the content is available'
+description: 'We use a SafeAreaView to ensure the content is visible on all devices'
 ---
 
 Open your `App.js`, delete the content and replace it with our "Hello, World" template.

@@ -3,7 +3,7 @@ path: '/lists'
 title: 'Lists'
 order: 12
 section: 'Basic components'
-description: 'Adding lists to React Native components'
+description: 'Lists in React Native'
 ---
 
 What if instead of 4 colors, we had 10 or even 100? How would we display them then? If you're already familiar with React, you might be tempted to add all the colors in an array and `.map` over them. This is a very common mistake for newcomers to React Native. While it may be fine to do on the web, in React native you should avoid using map in the render. This is because mapping over an array is not optimized. React Native will attempt to render every single element in the array all at once, regardless of whether they are visible on the screen or not.

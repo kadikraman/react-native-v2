@@ -3,7 +3,7 @@ path: '/lists-exercise'
 title: 'Lists Exercise 📝'
 order: 13
 section: 'Basic components'
-description: 'Lists exercise solution'
+description: 'Lists exercise: converting our color boxes to use FlatList'
 ---
 
 You might have already recognized the colours we were using earlier. They are part of the [Solarized](<https://en.wikipedia.org/wiki/Solarized_(color_scheme)>) color scheme by Ethan Schoonover. The colour palette actually contains 16 colours and next up, we'd like to display them all:
