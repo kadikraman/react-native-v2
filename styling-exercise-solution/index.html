@@ -54,4 +54,132 @@
         }
       }
     })
-  </script><link as="script" rel="preload" href="/react-native-v2/webpack-runtime-40005c99b1e86ce8f701.js"/><link as="script" rel="preload" href="/react-native-v2/styles-60d639aa852ede3c03a7.js"/><link as="script" rel="preload" href="/react-native-v2/commons-329d22faefc788e5d585.js"/><link as="script" rel="preload" href="/react-native-v2/app-351f20409c8efec33d4e.js"/><link as="script" rel="preload" href="/react-native-v2/component---src-templates-lesson-template-js-57f33e48e2b3259575db.js"/><link as="fetch" rel="preload" href="/react-native-v2/page-data/native-modules/page-data.json" crossorigin="anonymous"/></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><div><div class="navbar navbar-light gradient"><a class="navbar-brand" href="/react-native-v2/">React Native v2</a></div><div class="main"><div class="lesson-container"><div class="lesson"><h1>[RN] Adding native modules</h1><h2></h2><div class="lesson-content"><p>// TODO</p></div><div class="lesson-links"><a class="prev" href="/react-native-v2/ejecting-from-expo">← [Expo] Ejecting from Expo</a><a class="next" href="/react-native-v2/platform-specific-code">Platform Specific Code →</a></div></div></div></div></div></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/native-modules";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"app":["/app-351f20409c8efec33d4e.js"],"component---src-templates-lesson-template-js":["/component---src-templates-lesson-template-js-57f33e48e2b3259575db.js"],"component---src-pages-404-js":["/component---src-pages-404-js-9e58030b7c14a575ed14.js"],"component---src-pages-index-js":["/component---src-pages-index-js-3cf5184b9e76363f3609.js"]};/*]]>*/</script><script src="/react-native-v2/component---src-templates-lesson-template-js-57f33e48e2b3259575db.js" async=""></script><script src="/react-native-v2/app-351f20409c8efec33d4e.js" async=""></script><script src="/react-native-v2/commons-329d22faefc788e5d585.js" async=""></script><script src="/react-native-v2/styles-60d639aa852ede3c03a7.js" async=""></script><script src="/react-native-v2/webpack-runtime-40005c99b1e86ce8f701.js" async=""></script></body></html>
+  </script><link as="script" rel="preload" href="/react-native-v2/webpack-runtime-4cbd48f5720653dbcdff.js"/><link as="script" rel="preload" href="/react-native-v2/styles-60d639aa852ede3c03a7.js"/><link as="script" rel="preload" href="/react-native-v2/commons-329d22faefc788e5d585.js"/><link as="script" rel="preload" href="/react-native-v2/app-351f20409c8efec33d4e.js"/><link as="script" rel="preload" href="/react-native-v2/component---src-templates-lesson-template-js-57f33e48e2b3259575db.js"/><link as="fetch" rel="preload" href="/react-native-v2/page-data/styling-exercise-solution/page-data.json" crossorigin="anonymous"/></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><div><div class="navbar navbar-light gradient"><a class="navbar-brand" href="/react-native-v2/">React Native v2</a></div><div class="main"><div class="lesson-container"><div class="lesson"><h1>Styling Exercise Solution 👀</h1><h2></h2><div class="lesson-content"><p>Lets start from a clean slate again.</p>
+<p>Delete all the code in your <code class="language-text">App.js</code> and replace it with the Hello World template we used earlier:</p>
+<div class="gatsby-highlight" data-language="js"><pre class="language-js"><code class="language-js"><span class="token keyword">import</span> React <span class="token keyword">from</span> <span class="token string">'react'</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> View<span class="token punctuation">,</span> Text<span class="token punctuation">,</span> SafeAreaView<span class="token punctuation">,</span> StyleSheet <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'react-native'</span><span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> <span class="token function-variable function">App</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token punctuation">(</span>
+    <span class="token operator">&lt;</span>SafeAreaView<span class="token operator">></span>
+      <span class="token operator">&lt;</span>View<span class="token operator">></span>
+        <span class="token operator">&lt;</span>Text<span class="token operator">></span>Hello<span class="token punctuation">,</span> world<span class="token operator">!</span><span class="token operator">&lt;</span><span class="token operator">/</span>Text<span class="token operator">></span>
+      <span class="token operator">&lt;</span><span class="token operator">/</span>View<span class="token operator">></span>
+    <span class="token operator">&lt;</span><span class="token operator">/</span>SafeAreaView<span class="token operator">></span>
+  <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> App<span class="token punctuation">;</span></code></pre></div>
+<p>Now the first thing you'll want to do is add some padding to the container. Let's to 50 from the top and 10 from the sides:</p>
+<div class="gatsby-highlight" data-language="js"><pre class="language-js"><code class="language-js"><span class="token keyword">const</span> styles <span class="token operator">=</span> StyleSheet<span class="token punctuation">.</span><span class="token function">create</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  container<span class="token operator">:</span> <span class="token punctuation">{</span>
+    paddingTop<span class="token operator">:</span> <span class="token number">50</span><span class="token punctuation">,</span>
+    paddingHorizontal<span class="token operator">:</span> <span class="token number">10</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre></div>
+<p>Now it's time to add the new text. Since we already have some text on the page, we can do this by replacing the copy for our "Hello, world!" message and adding the style:</p>
+<div class="gatsby-highlight" data-language="js"><pre class="language-js"><code class="language-js"><span class="token comment">// replace "hello world" text and add style prop</span>
+
+<span class="token operator">&lt;</span>Text style<span class="token operator">=</span><span class="token punctuation">{</span>styles<span class="token punctuation">.</span>heading<span class="token punctuation">}</span><span class="token operator">></span>Here are some boxes <span class="token keyword">of</span> different colours<span class="token operator">&lt;</span><span class="token operator">/</span>Text<span class="token operator">></span></code></pre></div>
+<div class="gatsby-highlight" data-language="js"><pre class="language-js"><code class="language-js"><span class="token comment">// place this in the stylesheet, under the container style</span>
+
+heading<span class="token operator">:</span> <span class="token punctuation">{</span>
+  fontSize<span class="token operator">:</span> <span class="token number">18</span><span class="token punctuation">,</span>
+  fontWeight<span class="token operator">:</span> <span class="token string">'bold'</span><span class="token punctuation">,</span>
+  marginBottom<span class="token operator">:</span> <span class="token number">10</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span></code></pre></div>
+<p>Now for lets add a box for cyan. For this we need to add a new <code class="language-text">View</code> and a <code class="language-text">Text</code> with styles. Remember we'll have to use flex to position the text inside the boxes!</p>
+<div class="gatsby-highlight" data-language="js"><pre class="language-js"><code class="language-js"><span class="token operator">&lt;</span>View style<span class="token operator">=</span><span class="token punctuation">{</span>styles<span class="token punctuation">.</span>cyanBox<span class="token punctuation">}</span><span class="token operator">></span>
+  <span class="token operator">&lt;</span>Text style<span class="token operator">=</span><span class="token punctuation">{</span>styles<span class="token punctuation">.</span>text<span class="token punctuation">}</span><span class="token operator">></span>Cyan #<span class="token number">2</span>aa198<span class="token operator">&lt;</span><span class="token operator">/</span>Text<span class="token operator">></span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>View<span class="token operator">></span></code></pre></div>
+<div class="gatsby-highlight" data-language="js"><pre class="language-js"><code class="language-js">text<span class="token operator">:</span> <span class="token punctuation">{</span>
+  fontWeight<span class="token operator">:</span> <span class="token string">'bold'</span><span class="token punctuation">,</span>
+  color<span class="token operator">:</span> <span class="token string">'white'</span>
+<span class="token punctuation">}</span><span class="token punctuation">,</span>
+cyanBox<span class="token operator">:</span> <span class="token punctuation">{</span>
+  padding<span class="token operator">:</span> <span class="token number">10</span><span class="token punctuation">,</span>
+  borderRadius<span class="token operator">:</span> <span class="token number">3</span><span class="token punctuation">,</span>
+  justifyContent<span class="token operator">:</span> <span class="token string">'center'</span><span class="token punctuation">,</span>
+  alignItems<span class="token operator">:</span> <span class="token string">'center'</span><span class="token punctuation">,</span>
+  marginBottom<span class="token operator">:</span> <span class="token number">10</span><span class="token punctuation">,</span>
+  backgroundColor<span class="token operator">:</span> <span class="token string">'#2aa198'</span>
+<span class="token punctuation">}</span></code></pre></div>
+<p>Looking good! Let's add the blue box as well. Your <code class="language-text">App.js</code> now looks something like this:</p>
+<div class="gatsby-highlight" data-language="js"><pre class="language-js"><code class="language-js"><span class="token comment">// App.js</span>
+
+<span class="token keyword">import</span> React <span class="token keyword">from</span> <span class="token string">'react'</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> View<span class="token punctuation">,</span> Text<span class="token punctuation">,</span> SafeAreaView<span class="token punctuation">,</span> StyleSheet <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'react-native'</span><span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> <span class="token function-variable function">App</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token punctuation">(</span>
+    <span class="token operator">&lt;</span>SafeAreaView<span class="token operator">></span>
+      <span class="token operator">&lt;</span>View style<span class="token operator">=</span><span class="token punctuation">{</span>styles<span class="token punctuation">.</span>container<span class="token punctuation">}</span><span class="token operator">></span>
+        <span class="token operator">&lt;</span>Text style<span class="token operator">=</span><span class="token punctuation">{</span>styles<span class="token punctuation">.</span>heading<span class="token punctuation">}</span><span class="token operator">></span>
+          Here are some boxes <span class="token keyword">of</span> different colours
+        <span class="token operator">&lt;</span><span class="token operator">/</span>Text<span class="token operator">></span>
+        <span class="token operator">&lt;</span>View style<span class="token operator">=</span><span class="token punctuation">{</span>styles<span class="token punctuation">.</span>cyanBox<span class="token punctuation">}</span><span class="token operator">></span>
+          <span class="token operator">&lt;</span>Text style<span class="token operator">=</span><span class="token punctuation">{</span>styles<span class="token punctuation">.</span>text<span class="token punctuation">}</span><span class="token operator">></span>Cyan #<span class="token number">2</span>aa198<span class="token operator">&lt;</span><span class="token operator">/</span>Text<span class="token operator">></span>
+        <span class="token operator">&lt;</span><span class="token operator">/</span>View<span class="token operator">></span>
+        <span class="token operator">&lt;</span>View style<span class="token operator">=</span><span class="token punctuation">{</span>styles<span class="token punctuation">.</span>blueBox<span class="token punctuation">}</span><span class="token operator">></span>
+          <span class="token operator">&lt;</span>Text style<span class="token operator">=</span><span class="token punctuation">{</span>styles<span class="token punctuation">.</span>text<span class="token punctuation">}</span><span class="token operator">></span>Blue #<span class="token number">268</span>bd2<span class="token operator">&lt;</span><span class="token operator">/</span>Text<span class="token operator">></span>
+        <span class="token operator">&lt;</span><span class="token operator">/</span>View<span class="token operator">></span>
+      <span class="token operator">&lt;</span><span class="token operator">/</span>View<span class="token operator">></span>
+    <span class="token operator">&lt;</span><span class="token operator">/</span>SafeAreaView<span class="token operator">></span>
+  <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> styles <span class="token operator">=</span> StyleSheet<span class="token punctuation">.</span><span class="token function">create</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  container<span class="token operator">:</span> <span class="token punctuation">{</span>
+    paddingTop<span class="token operator">:</span> <span class="token number">50</span><span class="token punctuation">,</span>
+    paddingHorizontal<span class="token operator">:</span> <span class="token number">10</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  heading<span class="token operator">:</span> <span class="token punctuation">{</span>
+    fontSize<span class="token operator">:</span> <span class="token number">18</span><span class="token punctuation">,</span>
+    fontWeight<span class="token operator">:</span> <span class="token string">'bold'</span><span class="token punctuation">,</span>
+    marginBottom<span class="token operator">:</span> <span class="token number">10</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  text<span class="token operator">:</span> <span class="token punctuation">{</span>
+    fontWeight<span class="token operator">:</span> <span class="token string">'bold'</span><span class="token punctuation">,</span>
+    color<span class="token operator">:</span> <span class="token string">'white'</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  cyanBox<span class="token operator">:</span> <span class="token punctuation">{</span>
+    padding<span class="token operator">:</span> <span class="token number">10</span><span class="token punctuation">,</span>
+    borderRadius<span class="token operator">:</span> <span class="token number">3</span><span class="token punctuation">,</span>
+    justifyContent<span class="token operator">:</span> <span class="token string">'center'</span><span class="token punctuation">,</span>
+    alignItems<span class="token operator">:</span> <span class="token string">'center'</span><span class="token punctuation">,</span>
+    marginBottom<span class="token operator">:</span> <span class="token number">10</span><span class="token punctuation">,</span>
+    backgroundColor<span class="token operator">:</span> <span class="token string">'#2aa198'</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  blueBox<span class="token operator">:</span> <span class="token punctuation">{</span>
+    padding<span class="token operator">:</span> <span class="token number">10</span><span class="token punctuation">,</span>
+    borderRadius<span class="token operator">:</span> <span class="token number">3</span><span class="token punctuation">,</span>
+    justifyContent<span class="token operator">:</span> <span class="token string">'center'</span><span class="token punctuation">,</span>
+    alignItems<span class="token operator">:</span> <span class="token string">'center'</span><span class="token punctuation">,</span>
+    marginBottom<span class="token operator">:</span> <span class="token number">10</span><span class="token punctuation">,</span>
+    backgroundColor<span class="token operator">:</span> <span class="token string">'#268bd2'</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> App<span class="token punctuation">;</span></code></pre></div>
+<p>This is looking good, but you might have noticed there are a lot of repeated styles between the two boxes and this can get cumbersome pretty quickly. Thankfully there is a way around this. The <code class="language-text">style</code> prop also accepts an <em>array</em> of styles, so instead of <code class="language-text">style={styles.cyanBox}</code> we could pass in two sets of styles: <code class="language-text">style={[styles.box, styles.cyan]}</code>.</p>
+<div class="gatsby-highlight" data-language="js"><pre class="language-js"><code class="language-js"><span class="token operator">&lt;</span>View style<span class="token operator">=</span><span class="token punctuation">{</span><span class="token punctuation">[</span>styles<span class="token punctuation">.</span>box<span class="token punctuation">,</span> styles<span class="token punctuation">.</span>cyan<span class="token punctuation">]</span><span class="token punctuation">}</span><span class="token operator">></span>
+    <span class="token operator">&lt;</span>Text style<span class="token operator">=</span><span class="token punctuation">{</span>styles<span class="token punctuation">.</span>text<span class="token punctuation">}</span><span class="token operator">></span>Cyan #<span class="token number">2</span>aa198<span class="token operator">&lt;</span><span class="token operator">/</span>Text<span class="token operator">></span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>View<span class="token operator">></span>
+<span class="token operator">&lt;</span>View style<span class="token operator">=</span><span class="token punctuation">{</span><span class="token punctuation">[</span>styles<span class="token punctuation">.</span>box<span class="token punctuation">,</span> styles<span class="token punctuation">.</span>blue<span class="token punctuation">]</span><span class="token punctuation">}</span><span class="token operator">></span>
+    <span class="token operator">&lt;</span>Text style<span class="token operator">=</span><span class="token punctuation">{</span>styles<span class="token punctuation">.</span>text<span class="token punctuation">}</span><span class="token operator">></span>Blue #<span class="token number">268</span>bd2<span class="token operator">&lt;</span><span class="token operator">/</span>Text<span class="token operator">></span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>View<span class="token operator">></span></code></pre></div>
+<div class="gatsby-highlight" data-language="js"><pre class="language-js"><code class="language-js">box<span class="token operator">:</span> <span class="token punctuation">{</span>
+  padding<span class="token operator">:</span> <span class="token number">10</span><span class="token punctuation">,</span>
+  borderRadius<span class="token operator">:</span> <span class="token number">3</span><span class="token punctuation">,</span>
+  justifyContent<span class="token operator">:</span> <span class="token string">'center'</span><span class="token punctuation">,</span>
+  alignItems<span class="token operator">:</span> <span class="token string">'center'</span><span class="token punctuation">,</span>
+  marginBottom<span class="token operator">:</span> <span class="token number">10</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">,</span>
+cyan<span class="token operator">:</span> <span class="token punctuation">{</span>
+  backgroundColor<span class="token operator">:</span> <span class="token string">'#2aa198'</span>
+<span class="token punctuation">}</span><span class="token punctuation">,</span>
+blue<span class="token operator">:</span> <span class="token punctuation">{</span>
+  backgroundColor<span class="token operator">:</span> <span class="token string">'#268bd2'</span>
+<span class="token punctuation">}</span><span class="token punctuation">,</span></code></pre></div>
+<p>Finally add boxes for the remaining colours (magenta and orange) the same way, and we're all done!</p>
+<p><a href="https://github.com/kadikraman/AwesomeProjectRN/commit/6e25403f495a7cf7cc70cd5f177ce01379300556">🔗 RN 6e25403</a></p></div><div class="lesson-links"><a class="prev" href="/react-native-v2/styling-exercise">← Styling Exercise 📝</a><a class="next" href="/react-native-v2/components">Components →</a></div></div></div></div></div></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/styling-exercise-solution";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"app":["/app-351f20409c8efec33d4e.js"],"component---src-templates-lesson-template-js":["/component---src-templates-lesson-template-js-57f33e48e2b3259575db.js"],"component---src-pages-404-js":["/component---src-pages-404-js-9e58030b7c14a575ed14.js"],"component---src-pages-index-js":["/component---src-pages-index-js-9a6215127ee3ac8a0ffd.js"]};/*]]>*/</script><script src="/react-native-v2/component---src-templates-lesson-template-js-57f33e48e2b3259575db.js" async=""></script><script src="/react-native-v2/app-351f20409c8efec33d4e.js" async=""></script><script src="/react-native-v2/commons-329d22faefc788e5d585.js" async=""></script><script src="/react-native-v2/styles-60d639aa852ede3c03a7.js" async=""></script><script src="/react-native-v2/webpack-runtime-4cbd48f5720653dbcdff.js" async=""></script></body></html>
