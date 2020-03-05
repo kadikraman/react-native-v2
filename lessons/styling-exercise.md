@@ -3,7 +3,7 @@ path: '/styling-exercise'
 title: 'Styling Exercise 📝'
 order: 9
 section: 'Basic components'
-description: 'Styling challenge'
+description: 'Kadi introduces the styling challenge and solution'
 ---
 
 The best way to learn is by doing so let's start off by adding some colour. Here's a little app I built, showcasing come of my favourite colours. Try to recreate it! Here are the colours I used:
@@ -23,6 +23,8 @@ Orange: #cb4b16
         <img alt="Style challenge Android" src="./images/style-android.png" />
     </div>
 </div>
+
+TODO: break style
 
 ## Styling Exercise Solution 👀
 

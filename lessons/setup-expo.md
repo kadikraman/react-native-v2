@@ -20,7 +20,7 @@ First, make sure you have Node.js installed (10.0 or later). You can do this by 
 ### Install Expo
 
 ```sh
-npm install -g expo-cli
+npm install -g expo-cli@3
 ```
 
 This installs the expo cli globally. We'll be using this to create our new project.

@@ -1,7 +1,7 @@
 ---
 path: '/code-style'
 title: 'Adding a linter'
-order: 22
+order: 24
 section: 'Extra Credit'
 description: 'Kadi explains the importance of consistent code style and we install a linter'
 ---

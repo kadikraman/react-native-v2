@@ -10,8 +10,6 @@ Hi there, and welcome to React Native v2! 👋
 
 ## Course Objective
 
-This is an updated version of the [React Native course by Scott Moss](https://frontendmasters.com/courses/react-native/). The JavaScript ecosystem is fast-paced and ever-changing, and React Native is no exception! A lot of exciting developments have occurred in the last couple of years, both in React Native and React itself, and they have changed how we build mobile apps with React Native.
-
 I build React Native apps for a living and my main goal is to show you how I do it - what are the best practices, conventions, do's and don'ts.
 
 The aim of the course is to give you the knowledge and resources necessary to start working on your own React Native project. We will cover what React Native is and how it works, what kind of components and tooling is available, and how to use them. We will stick with built-in and mainsteam components, and minimize the use of third party components.
