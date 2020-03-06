@@ -6,7 +6,11 @@ section: 'Basic components'
 description: 'Styling exercise solution'
 ---
 
-Now the first thing you'll want to do is add some padding to the container. Let's to 50 from the top and 10 from the sides:
+[🔗 Expo b12c0f43f24a77c62699e216705d5311ac8e942d](https://github.com/kadikraman/AwesomeProjectExpo/commit/b12c0f43f24a77c62699e216705d5311ac8e942d)
+
+[🔗 RN df8184f4c4d0695a683df85009b4e808cad4cc5d](https://github.com/kadikraman/AwesomeProjectRN/commit/df8184f4c4d0695a683df85009b4e808cad4cc5d)
+
+The first thing you'll want to do is add some padding to the container. Let's to 50 from the top and 10 from the sides:
 
 ```js
 const styles = StyleSheet.create({
@@ -147,7 +151,3 @@ blue: {
 ```
 
 Finally add boxes for the remaining colours (magenta and orange) the same way, and we're all done!
-
-[🔗 Expo b12c0f43f24a77c62699e216705d5311ac8e942d](https://github.com/kadikraman/AwesomeProjectExpo/commit/b12c0f43f24a77c62699e216705d5311ac8e942d)
-
-[🔗 RN df8184f4c4d0695a683df85009b4e808cad4cc5d](https://github.com/kadikraman/AwesomeProjectExpo/commit/df8184f4c4d0695a683df85009b4e808cad4cc5d)

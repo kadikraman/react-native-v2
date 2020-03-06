@@ -103,6 +103,6 @@ export default App;
 
 Great! Now you can be confident your content will be visible regardless of the device.
 
-[🔗 Expo 49584b83f6871b73bd3fc6219db048e0875e8f53](https://github.com/kadikraman/AwesomeProjectRN/commit/49584b83f6871b73bd3fc6219db048e0875e8f53)
+[🔗 Expo 49584b83f6871b73bd3fc6219db048e0875e8f53](https://github.com/kadikraman/AwesomeProjectExpo/commit/49584b83f6871b73bd3fc6219db048e0875e8f53)
 
-[🔗 RN 43e1c4d6ae62f4befb51857fa4b95b1c14ddd3de](https://github.com/kadikraman/AwesomeProjectExpo/commit/43e1c4d6ae62f4befb51857fa4b95b1c14ddd3de)
+[🔗 RN 43e1c4d6ae62f4befb51857fa4b95b1c14ddd3de](https://github.com/kadikraman/AwesomeProjectRN/commit/43e1c4d6ae62f4befb51857fa4b95b1c14ddd3de)
