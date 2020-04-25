@@ -10,6 +10,8 @@ description: 'Solution to the lists exercise'
 
 [🔗 RN 98c2e0bf744c42290c39b94afbed70db351e0de4](https://github.com/kadikraman/AwesomeProjectRN/commit/98c2e0bf744c42290c39b94afbed70db351e0de4)
 
+[👩‍💻 Live Coding cb8f698fefdffb4564384638643448c21e7ddfe8](https://github.com/FrontendMasters/AwesomeProjectExpo/commit/cb8f698fefdffb4564384638643448c21e7ddfe8)
+
 In this solution we're removed the individual `ColorBox`es and rendered them all using a `FlatList`. Some things to note:
 
 - since we no longer have a containing `View`, we not pass in the component styles into the `FlatList` component instead. Almost all native components in React Native can by styled using the style prop

@@ -10,6 +10,8 @@ description: 'Network requests exercise solution'
 
 [🔗 RN 6cbb5e4895a2c8e65928cf998865a5d1062bc6bc](https://github.com/kadikraman/AwesomeProjectRN/commit/6cbb5e4895a2c8e65928cf998865a5d1062bc6bc)
 
+[👩‍💻 Live Coding 58cae1baaa963249697ac3f30d457e0ab1a8f635](https://github.com/FrontendMasters/AwesomeProjectExpo/commit/58cae1baaa963249697ac3f30d457e0ab1a8f635)
+
 In this exercise, we've used all 3 hooks we just learnt about!
 
 ```js

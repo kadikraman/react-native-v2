@@ -155,3 +155,5 @@ const Home = ({ navigation }) => {
 [🔗 Expo f4df234627b546758e8b573f43286e0ca73cc46b](https://github.com/kadikraman/AwesomeProjectExpo/commit/f4df234627b546758e8b573f43286e0ca73cc46b)
 
 [🔗 RN cfdef69d85efcd0967ee35c795fc64906e2bf2c8](https://github.com/kadikraman/AwesomeProjectRN/commit/cfdef69d85efcd0967ee35c795fc64906e2bf2c8)
+
+[👩‍💻 Live Coding 0cf28f8a982310c7a50f66c09c3e5abea55fc492](https://github.com/FrontendMasters/AwesomeProjectExpo/commit/0cf28f8a982310c7a50f66c09c3e5abea55fc492)

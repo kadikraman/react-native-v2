@@ -10,6 +10,8 @@ description: 'Styling exercise solution'
 
 [🔗 RN df8184f4c4d0695a683df85009b4e808cad4cc5d](https://github.com/kadikraman/AwesomeProjectRN/commit/df8184f4c4d0695a683df85009b4e808cad4cc5d)
 
+[👩‍💻 Live Coding a684004b411015049c2ccbaf5abca3b28cd93cd6](https://github.com/FrontendMasters/AwesomeProjectExpo/commit/a684004b411015049c2ccbaf5abca3b28cd93cd6)
+
 The first thing you'll want to do is add some padding to the container. Let's to 50 from the top and 10 from the sides:
 
 ```js

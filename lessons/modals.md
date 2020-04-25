@@ -108,3 +108,5 @@ import AddNewPaletteModal from './screens/AddNewPaletteModal';
 [🔗 RN 18501165c8a8f854c749da6a6d87ae0b376174a0](https://github.com/kadikraman/AwesomeProjectRN/commit/18501165c8a8f854c749da6a6d87ae0b376174a0)
 
 [🔗 Expo 7b6e1c682eb50ab2379cb87833252897dfc65c92](https://github.com/kadikraman/AwesomeProjectExpo/commit/7b6e1c682eb50ab2379cb87833252897dfc65c92)
+
+[👩‍💻 Live Coding a5fa145d345e29ea5005508f09bc9d143441f3c0](https://github.com/FrontendMasters/AwesomeProjectExpo/commit/a5fa145d345e29ea5005508f09bc9d143441f3c0)

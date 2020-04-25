@@ -132,3 +132,5 @@ Finally, replace update all the existing colour boxes to use our new component a
 [🔗 Expo 51f04c9bd3d42d7518882686c0593156dd1773ac](https://github.com/kadikraman/AwesomeProjectExpo/commit/51f04c9bd3d42d7518882686c0593156dd1773ac)
 
 [🔗 RN a4ed9cd18fc164c560d3537f82c9a94d17c91441](https://github.com/kadikraman/AwesomeProjectRN/commit/a4ed9cd18fc164c560d3537f82c9a94d17c91441)
+
+[👩‍💻 Live Coding 6266918a02853bbbc0c61a62a44531d041d7690f](https://github.com/FrontendMasters/AwesomeProjectExpo/commit/6266918a02853bbbc0c61a62a44531d041d7690f)
