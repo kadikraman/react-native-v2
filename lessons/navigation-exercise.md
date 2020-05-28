@@ -11,7 +11,7 @@ You can pass down parameters to the screen you navigate to as a second argument:
 ```js
 const COLORS = [...];
 
-navigation.navigate('ColorPalette', { paletteName: 'Solarized', colors: COLORS })`;
+navigation.navigate('ColorPalette', { paletteName: 'Solarized', colors: COLORS });
 ```
 
 This will make the paletteName and colors available to the ColorPalette via the `route` prop:
