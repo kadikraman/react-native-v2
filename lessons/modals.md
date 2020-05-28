@@ -32,6 +32,14 @@ First lets rename our Stack to RootStack:
 const RootStack = createStackNavigator();
 ```
 
+Now below that, we declare our MainStack:
+
+```js
+// App.js
+
+const MainStack = createStackNavigator();
+```
+
 Now let's add the MainStack and pull our existing navigation all out of the App component and into it's own MainStackScreen component:
 
 ```js
