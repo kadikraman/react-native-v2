@@ -37,7 +37,7 @@ So in order to target 99% of smartphone users, we'll have to build two apps: one
     <img alt="Separate developer teams" src="./images/rn-how-work-2.png" />
 </div>
 
-It's easy to imagine the difficulties this can cause: you'll have to manage two of everything: language, codebases, developer teams, feature sets, release schedules etc. Hiring two developer teams is expensive, and hiring a single team that has in depth knowledge of both Andorid and iOS is almost impossible.
+It's easy to imagine the difficulties this can cause: you'll have to manage two of everything: language, codebases, developer teams, feature sets, release schedules etc. Hiring two developer teams is expensive, and hiring a single team that has in depth knowledge of both Android and iOS is almost impossible.
 
 React Native is a platform developed by Facebook for solving this problem. Their goal was to build a platform that enables you to have:
 
