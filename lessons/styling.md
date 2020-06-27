@@ -6,7 +6,7 @@ section: 'Basic components'
 description: 'We talk about styling React Native components'
 ---
 
-In React Native, all styling is done using inline styles. We use a `StyleSheet` from `react-native` to create the styles. Usually we add this styles contant at the bottom of the file, or in a separate file:
+In React Native, all styling is done using inline styles. We use a `StyleSheet` from `react-native` to create the styles. Usually we add this styles constant at the bottom of the file, or in a separate file:
 
 ```js
 const styles = StyleSheet.create({

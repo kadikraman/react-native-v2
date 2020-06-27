@@ -82,7 +82,7 @@ Where "Kadi’s iPhone" is the name of your phone. Note that this will take a li
 
 ### Android - running on an emulator
 
-First, we need to open an emulator. iOS simulator gets opened automatically, but for Android you'll have to do it yourself. Open Android Studio, click on the "Configure" option and choose "AVD Manager". AVD stands for "Android Virutal Device" and this is the menu where you can install, delete, edit and run emulators from.
+First, we need to open an emulator. iOS simulator gets opened automatically, but for Android you'll have to do it yourself. Open Android Studio, click on the "Configure" option and choose "AVD Manager". AVD stands for "Android Virtual Device" and this is the menu where you can install, delete, edit and run emulators from.
 
 <div style="width:500px;margin:0 auto;margin-bottom:20px">
     <img alt="Android Studio AVD manager dropdown" src="./images/android-avd-manager.png" />
