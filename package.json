@@ -8,7 +8,7 @@
     "code-mirror-themes": "^1.0.0",
     "front-matter": "^3.1.0",
     "gatsby": "^2.13.51",
-    "gatsby-cli": "^2.7.27",
+    "gatsby-cli": "^2.12.51",
     "gatsby-link": "^2.2.4",
     "gatsby-plugin-layout": "^1.1.2",
     "gatsby-plugin-react-helmet": "^3.1.3",
