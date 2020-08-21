@@ -29,7 +29,7 @@ const handleUpdate = useCallback(
 );
 ```
 
-Then, to figure out the value for the `Switch`, you san check whether the current color exists in `selectedColors`. Note that `!!` is a shorthand for making the value a boolean, so `!!undefined === false` and `!!{} === true`.
+Then, to figure out the value for the `Switch`, you can check whether the current color exists in `selectedColors`. Note that `!!` is a shorthand for making the value a boolean, so `!!undefined === false` and `!!{} === true`.
 
 ```js
 <Switch
