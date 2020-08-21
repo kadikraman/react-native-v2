@@ -6,7 +6,7 @@ section: 'Setup'
 description: 'Getting started with Expo'
 ---
 
-The fastest way to get started with React Native is to us Expo and run the app on your device. Feel free to use the [React Native docs](https://reactnative.dev/docs/getting-started) or [Expo docs](https://docs.expo.io/versions/latest/) for reference.
+The fastest way to get started with React Native is to us Expo and run the app on your device. Feel free to use the [React Native docs](https://reactnative.dev/docs/getting-started) or [Expo docs](https://docs.expo.io) for reference.
 
 #### You'll need:
 
@@ -15,12 +15,12 @@ The fastest way to get started with React Native is to us Expo and run the app o
 
 ### Install Node
 
-First, make sure you have Node.js installed (10.0 or later). You can do this by opening a terminal and running `node -v`. If not you can install it [here](https://nodejs.org/en/). There's usually two versions to choose from, pick the one that says LTS (Long Term Support) after the version number.
+First, make sure you have Node.js installed (12 or later). You can do this by opening a terminal and running `node -v`. If not you can install it [here](https://nodejs.org/en/). There's usually two versions to choose from, pick the one that says LTS (Long Term Support) after the version number.
 
 ### Install Expo
 
 ```sh
-npm install -g expo-cli@3
+npm install -g expo-cli
 ```
 
 This installs the expo cli globally. We'll be using this to create our new project.
