@@ -54,11 +54,11 @@
         }
       }
     })
-  </script><link as="script" rel="preload" href="/react-native-v2/webpack-runtime-6dd33ffa6c48b2285561.js"/><link as="script" rel="preload" href="/react-native-v2/styles-89fd2ae28bdf06750a71.js"/><link as="script" rel="preload" href="/react-native-v2/framework-d9cf0f47b747b267fae2.js"/><link as="script" rel="preload" href="/react-native-v2/app-3b3b5bccb6a7ad6ac3c8.js"/><link as="script" rel="preload" href="/react-native-v2/component---src-templates-lesson-template-js-71534aa945df57628f72.js"/><link as="fetch" rel="preload" href="/react-native-v2/page-data/modals/page-data.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/react-native-v2/page-data/app-data.json" crossorigin="anonymous"/></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><div><div class="navbar navbar-light gradient"><a class="navbar-brand" href="/react-native-v2/">React Native v2</a></div><div class="main"><div class="lesson-container"><div class="lesson"><h1>Opening a full screen modal</h1><h2></h2><div class="lesson-content"><p>Before we get stuck into our form challenge, we'll need to do some prep work. Specifically, we need to open a modal to put that form in. This requires some tinkering with navigation again, so we'll dp that first. This is an illustration of what we'd like to get to:</p>
+  </script><link as="script" rel="preload" href="/react-native-v2/webpack-runtime-6dd33ffa6c48b2285561.js"/><link as="script" rel="preload" href="/react-native-v2/styles-89fd2ae28bdf06750a71.js"/><link as="script" rel="preload" href="/react-native-v2/framework-d9cf0f47b747b267fae2.js"/><link as="script" rel="preload" href="/react-native-v2/app-3b3b5bccb6a7ad6ac3c8.js"/><link as="script" rel="preload" href="/react-native-v2/component---src-templates-lesson-template-js-71534aa945df57628f72.js"/><link as="fetch" rel="preload" href="/react-native-v2/page-data/modals/page-data.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/react-native-v2/page-data/app-data.json" crossorigin="anonymous"/></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><div><div class="navbar navbar-light gradient"><a class="navbar-brand" href="/react-native-v2/">React Native v2</a></div><div class="main"><div class="lesson-container"><div class="lesson"><h1>Opening a full screen modal</h1><h2></h2><div class="lesson-content"><p>Before we get stuck into our form challenge, we'll need to do some prep work. Specifically, we need to open a modal to put that form in. This requires some tinkering with navigation again, so we'll do that first. This is an animation of what we'd like to get to:</p>
 <div style="width:800px; display:flex; margin:0 auto;">
   <img alt="Open modal demo" src="/react-native-v2/a13f62bcf5af5f4b8cbc7363faef86ce/open-modal-demo.gif" width="800">
 </div>
-<p>For the forms challenge, we'd like to be start adding our own color schemes to the list. But the best way to do that would be using a modal, so first we need to update out navigation so allow us to trigger display modals. In order to do this, we'll have to once again refactor our navigation.</p>
+<p>For the forms challenge, we'd like to be start adding our own color schemes to the list. But the best way to do that would be using a modal, so first we need to update out navigation so allow us to trigger display modals. In order to do this, we'll have to, once again, refactor our navigation.</p>
 <p>Looking at our navigation as a tree, this is the layout we need to get to:</p>
 <div style="width:500px;margin:0 auto;margin-bottom:20px">
     <span class="gatsby-resp-image-wrapper" style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 800px; ">
@@ -71,7 +71,7 @@
   </a>
     </span>
 </div>
-<p>Source: react navigation <a href="https://reactnavigation.org/docs/modal/">docs</a></p>
+<p>We'll be doing this following the react navigation <a href="https://reactnavigation.org/docs/modal/">docs</a>.</p>
 <p>Our current layout only has the RootStack, HomeScreen, and DetailsScreen, so we need to add the a MainStack and a Modal Screen in the middle.</p>
 <p>First lets rename our Stack to RootStack:</p>
 <div class="gatsby-highlight" data-language="js"><pre class="language-js"><code class="language-js"><span class="token comment">// App.js</span>
@@ -81,7 +81,7 @@
 <div class="gatsby-highlight" data-language="js"><pre class="language-js"><code class="language-js"><span class="token comment">// App.js</span>
 
 <span class="token keyword">const</span> MainStack <span class="token operator">=</span> <span class="token function">createStackNavigator</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre></div>
-<p>Now let's add the MainStack and pull our existing navigation all out of the App component and into it's own MainStackScreen component:</p>
+<p>Now let's add the MainStack and pull our existing navigation all out of the App component and into its own MainStackScreen component:</p>
 <div class="gatsby-highlight" data-language="js"><pre class="language-js"><code class="language-js"><span class="token comment">// App.js</span>
 
 <span class="token keyword">const</span> <span class="token function-variable function">MainStackScreen</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
@@ -96,7 +96,7 @@
     <span class="token operator">&lt;</span><span class="token operator">/</span>MainStack<span class="token punctuation">.</span>Navigator<span class="token operator">></span>
   <span class="token punctuation">)</span><span class="token punctuation">;</span>
 <span class="token punctuation">}</span><span class="token punctuation">;</span></code></pre></div>
-<p>Finally, update the App component to use RootStack and MainStackScreen</p>
+<p>Finally, update the App component to use RootStack and MainStackScreen:</p>
 <div class="gatsby-highlight" data-language="js"><pre class="language-js"><code class="language-js"><span class="token comment">// App.js</span>
 
 <span class="token keyword">const</span> <span class="token function-variable function">App</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
