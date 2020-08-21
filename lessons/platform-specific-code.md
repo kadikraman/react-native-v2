@@ -6,7 +6,7 @@ section: 'Extra Credit'
 description: 'Platform specific code: how to write code that targets a specific platform'
 ---
 
-Although most of the time, one codebase for two apps works like a charm, there can be times when you'll want to show one thins on Android and another on iOS. This is usually when sing some native library that is only available on one of the platforms, e.g. [DatePickeriOS](https://reactnative.dev/docs/datepickerios) or [DrawerLayoutAndroid](https://reactnative.dev/docs/drawerlayoutandroid), or some minor updates like colors or fonts. You may have noticed that colors can look a bit duller on Android screens and sometimes you may want to adjust for that.
+Although most of the time one codebase for two apps works like a charm, there can be times when you'll want to show something in a way on Android and in another on iOS. This usually happens when some native library is only available on one of the platforms, e.g. [DatePickeriOS](https://reactnative.dev/docs/datepickerios) or [DrawerLayoutAndroid](https://reactnative.dev/docs/drawerlayoutandroid), or some minor updates like colors or fonts need to be consistent with the OS. You may have noticed that colors can look a bit duller on Android screens and sometimes you may want to adjust for that.
 
 ## Platform option
 
@@ -41,7 +41,7 @@ const styles = StyleSheet.create({
 
 ## Platform specific extensions
 
-Sometimes you might want to have a a whole component be custom to the platform. We usually avoid this when possible (since maintaining 2 versions of the same code was what we were trying to avoid with React Native!), but sometimes it is necessary and there is a very handy way to do this using [file extensions](https://reactnative.dev/docs/platform-specific-code#platform-specific-extensions).
+Sometimes you might want to have a a whole component be custom to the platform. We usually avoid this when possible (since maintaining 2 versions of the same code is what we are trying to avoid with React Native!), but sometimes it is necessary and there is a very handy way to do this using [file extensions](https://reactnative.dev/docs/platform-specific-code#platform-specific-extensions).
 
 Suppose you had to build a custom `AwesomeButton` component for Android and iOS. Then instead of one `AwesomeButton.js` file, you should have two and place them next to each other in the same directory:
 

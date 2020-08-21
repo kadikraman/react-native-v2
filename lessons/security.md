@@ -6,7 +6,7 @@ section: 'Extra Credit'
 description: 'Common security concerns in React Native'
 ---
 
-Note: these security docs will soon be part of the official React Native docs [once my PR gets merged](https://github.com/facebook/react-native-website/pull/1633). For now, I have copied the content here.
+Note: the most updated version of this document can be found directly in the [React Native documentation](https://reactnative.dev/docs/security).
 
 Security is an often overlooked aspect when building software. Similarly to how we’ve yet to invent a completely impenetrable lock (bank vaults do, after all, still get broken into), it is also almost impossible to build software to be completely impenetrable. However, the probability of falling victim to a malicious attack or being exposed for a security vulnerability is inversely proportional to the effort you’re willing to put in to protecting your application against any such eventuality. Although an ordinary padlock is pickable, it is still much harder to get past than a cabinet hook!
 
@@ -14,7 +14,7 @@ In this guide, you will learn about best practices for storing sensitive informa
 
 ## Storing Sensitive Info
 
-Never store sensitive API keys in your app code. Anything included in your code could be accessed in plain text by anyone inspecting the app bundle. Tools like [react-native-dotenv](https://github.com/zetachang/react-native-dotenv) and [react-native-config](https://github.com/luggit/react-native-config/) are great for adding environment-specific variables like API endpoints, but they should not be confused with server-side environment variables, which can often contain secrets and api keys.
+Never store sensitive API keys in your app code. Anything included in your code could be accessed in plain text by anyone inspecting the app bundle. Tools like [react-native-config](https://github.com/luggit/react-native-config/) are great for adding environment-specific variables like API endpoints, but they should not be confused with server-side environment variables, which can often contain secrets and api keys.
 
 If you must have an API key or a secret to access some resource from your app, the most secure way to handle this would be to build an orchestration layer between your app and the resource. This could be a serverless function (e.g. using AWS Lambda or Google Cloud Functions) which can forward the request with the required API key or secret. Secrets in server side code cannot be accessed by the API consumers the same way secrets in your app code can.
 
