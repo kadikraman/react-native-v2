@@ -12,7 +12,7 @@ Some people have strong options on whether or not they want to use Expo for Reac
 
 If you are completely new to mobile development and just want to get a taste of React Native without a lot of upfront configuration work, I'd recommend starting with Expo, just because you'll get to the part where you try out coding much quicker.
 
-You should also definitely go for Expo if you have a Windows or Linux machine, but you want to run the app on your physical iPhone. This is simply not possible with plain React Native, because native iOS apps can _only_ be built on a macOS machine. Expo overcomes this be allowing you to install a native "shell" on your phone and transfer the JavaScript bundle you're working on directly into this native shell. This way, you end up only writing JavaScript on locally, no native compilation step necessary.
+You should also definitely go for Expo if you have a Windows or Linux machine, but you want to run the app on your physical iPhone. This is simply not possible with plain React Native, because native iOS apps can _only_ be built on a macOS machine. Expo overcomes this be allowing you to install a native "shell" app on your phone and transfer the JavaScript bundle you're working on directly into this native shell. This way, you end up only writing JavaScript on locally, no native compilation step necessary.
 
 It can take quite a bit time to set up your development environment without Expo, since you'll have to download, install and configure XCode and/or Android Studio. Just to give you an idea of the setup time, here are some really rough estimates based on my experience:
 
