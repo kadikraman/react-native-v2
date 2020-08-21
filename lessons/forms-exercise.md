@@ -8,7 +8,7 @@ description: 'Forms exercise: adding a new color palette'
 
 For the final exercise, let's add a form that lets the user submit their own color scheme, and add it to the top of the list.
 
-Note: this exercise is meant to be challenging and provide you with scope to add your won features. If you decide to have a go at this on your own, don't expect to finish this in 15 minutes, or even an hour.
+Note: this exercise is meant to be challenging and provide you with scope to add your own features. If you decide to have a go at this on your own, don't expect to finish this in 15 minutes, or even an hour.
 
 Here's an example of the finished product:
 
@@ -33,7 +33,7 @@ Here's an example of the finished product:
 
 #### Data
 
-These are all the named web colors
+These are all the named HTML5 colors:
 
 ```js
 const COLORS = [

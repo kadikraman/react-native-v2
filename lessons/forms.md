@@ -10,7 +10,7 @@ Forms in React Native are just a collection of inputs. Whereas on the web we hav
 
 ## TextInput
 
-The [TextInput](https://reactnative.dev/docs/textinput) is probably the most common and frequently in React Native. It is actually incredibly powerful and has a many important features.
+The [TextInput](https://reactnative.dev/docs/textinput) is probably the most common and frequently used text form in React Native. It is actually incredibly powerful and has a many important features.
 
 [🔍 TextInput examples](https://snack.expo.io/@kadikraman/textinput-example)
 
@@ -19,6 +19,7 @@ Here we have 4 examples of what you can do with TextInput:
 #### Basic text input
 
 The first input is a basic TextInput with no embellishments. We use 4 props:
+
 - `style` - adding some padding and a border color for the input to be better visible on the screen. The Text Input has no default styles
 - `value` - the current value
 - `onChangeText` - gets called with the new value whenever the user changes the content of the input
@@ -29,6 +30,7 @@ The first input is a basic TextInput with no embellishments. We use 4 props:
 Here we use an additional prop called `keyboardType`. You can use [this prop](https://reactnative.dev/docs/textinput#keyboardtype) to define what type of input this is. Since we're working on phones, this will define what type of keyboard the user gets to work with.
 
 The options that work on both iOS and Android are:
+
 - default
 - number-pad
 - decimal-pad
@@ -38,12 +40,11 @@ The options that work on both iOS and Android are:
 
 #### Password input
 
-For password inputs we don't want to show what the user has types. For this we can use the `secureTextEntry` prop and set it to true (default is false). This ensures the input displays *** instead of the actual content.
+For password inputs we don't want to show what the user has types. For this we can use the `secureTextEntry` prop and set it to true (default is false). This ensures the input displays \*\*\* instead of the actual content.
 
 #### Multiline input
 
 For a multiline input, we use `multiline={true}`. This will allow the input to grow infinitely. If we'd like to cap the height of the input on the page, we can also set it to a specific number of lines, e.g. 4 with `numberOfLines={4}`.
-
 
 ## Picker
 
@@ -70,4 +71,6 @@ A [Switch](https://reactnative.dev/docs/switch) is essentially a toggle button. 
 
 ## Other components
 
-That's most of the built in components, but there are loads of community components you can install separately and use. A lot of them are under the [react native community](https://github.com/react-native-community) GitHub org, but there are even more out in the wild. Just Google "React Native Date Picker" to find some!
+We have now played around with the most important components built into the core React Native library, but there are loads of community components you can install separately and use!
+
+If you want to find some more, head over the [React Native Directory](https://reactnative.directory/) website.

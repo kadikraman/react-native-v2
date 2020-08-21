@@ -29,7 +29,7 @@ const handleUpdate = useCallback(
 );
 ```
 
-Then, to figure out the value for the `Switch`, you san check whether the current color exists in `selectedColors`. Note that !! is a shorthand for making the value a boolean, so `!!undefined === false` and `!!{} === true`
+Then, to figure out the value for the `Switch`, you san check whether the current color exists in `selectedColors`. Note that `!!` is a shorthand for making the value a boolean, so `!!undefined === false` and `!!{} === true`.
 
 ```js
 <Switch
@@ -75,6 +75,6 @@ Notice that we added `[newPalette]` as the second argument - this means that the
 
 That's all for now! You could take this little application further and add some enhancements of your own. Here are some ideas:
 
-- copy the hex code of a color to clipboard when the user taps on it - [docs](https://reactnative.dev/docs/clipboard)
+- copy the hex code of a color to clipboard when the user taps on it (leverage the [Clipboard component](https://github.com/react-native-community/clipboard) for it)
 - display a preview of the colors in the modal so the user can see what they're picking
 - disable the button if the form is invalid
