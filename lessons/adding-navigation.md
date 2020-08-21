@@ -144,7 +144,7 @@ Finally, we'll need a way to tell the navigation where we'd like to go. Every co
 const Home = ({ navigation }) => {
   return (
     <View>
-      <TouchableOpacity onPress={() => navigation.push('ColorPalette')}>
+      <TouchableOpacity onPress={() => navigation.navigate('ColorPalette')}>
         <Text>Solarized</Text>
       </TouchableOpacity>
     </View>
