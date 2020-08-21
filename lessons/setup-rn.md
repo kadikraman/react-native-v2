@@ -8,9 +8,9 @@ description: 'Setting up with plain React Native'
 
 If you are already familiar with mobile development (or if you can't or don't want to use Expo), you may want to use the React Native CLI. This requires Android Studio or XCode in order to get started. If you already have these installed, you should be up and running within minutes. If not, you should expect to spend an hour or so on installing and configuring them.
 
-**Note!** If you are using a Windows or Linux machine, you won't be able to build the iOS device, but you can build the Android app. This is why a lot of React Native developers end up using MacBook Pros, since this way you can work on both native apps are the same time. If you want to test on your own iOS device but you don't have a Mac, you may want to look into using Expo instead.
+**Note!** If you are using a Windows or Linux machine, you won't be able to build the iOS app, but you can build the Android one. This is why a lot of React Native developers end up using MacBook Pros, since this way you can work on both native apps are the same time. If you want to test on your own iOS device but you don't have a Mac, you may want to look into using Expo instead.
 
-For getting started, follow the React Native CLI quickstart in the [getting started guide](https://reactnative.dev/docs/getting-started) until the section titled **"Creating a New Application"**. If you are on a Mac, you may want to choose iOS for this workshop, as the setup tends to be easier than Android on a Mac. Once you're done, let's pick up from "Creating a New Application" together.
+For getting started, follow the React Native CLI quickstart in the [environment setup guide](https://reactnative.dev/docs/environment-setup) until the section titled **"Creating a New Application"**. If you are on a Mac, you may want to choose iOS for this workshop, as the setup tends to be easier than Android on a Mac. Once you're done, let's pick up from "Creating a New Application" together.
 
 ## Creating a New Application
 
@@ -38,7 +38,7 @@ You can omit this step if you want, since the run command does also open a new w
 
 ### iOS - running on a simulator
 
-Open a new terminal window and navigate back to AwesomeProject and run:
+Open a new terminal window, navigate back to AwesomeProject and run:
 
 ```sh
 npx react-native run-ios

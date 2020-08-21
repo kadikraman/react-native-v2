@@ -71,7 +71,7 @@ Next up we can replace our existing code in the render with a single FlatList:
   data={COLOR_PALETTES}
   keyExtractor={item => item.paletteName}
   renderItem={({ item }) => (
-    <TouchableOpacity onPress={() => navigation.push('ColorPalette', item)}>
+    <TouchableOpacity onPress={() => navigation.navigate('ColorPalette', item)}>
       <Text>{item.paletteName}</Text>
     </TouchableOpacity>
   )}
@@ -98,12 +98,12 @@ In the Home component, update the `renderItem` to use `PalettePreview` instead:
 // screens/Home.js
 
 <PalettePreview
-  onPress={() => navigation.push('ColorPalette', item)}
+  onPress={() => navigation.navigate('ColorPalette', item)}
   palette={item}
 />
 ```
 
-And in PalettePreview, copy the code that used to be in renderItem and use the passed in props to display the component name and handle onPress"
+And in PalettePreview, copy the code that used to be in renderItem and use the passed in props to display the component name and handle onPress:
 
 ```js
 // components/PalettePreview.js

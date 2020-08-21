@@ -6,13 +6,13 @@ section: 'Forms'
 description: 'Opening a full screen modal'
 ---
 
-Before we get stuck into our form challenge, we'll need to do some prep work. Specifically, we need to open a modal to put that form in. This requires some tinkering with navigation again, so we'll dp that first. This is an illustration of what we'd like to get to:
+Before we get stuck into our form challenge, we'll need to do some prep work. Specifically, we need to open a modal to put that form in. This requires some tinkering with navigation again, so we'll do that first. This is an animation of what we'd like to get to:
 
 <div style="width:800px; display:flex; margin:0 auto;">
   <img alt="Open modal demo" src="./images/open-modal-demo.gif" width="800" />
 </div>
 
-For the forms challenge, we'd like to be start adding our own color schemes to the list. But the best way to do that would be using a modal, so first we need to update out navigation so allow us to trigger display modals. In order to do this, we'll have to once again refactor our navigation.
+For the forms challenge, we'd like to be start adding our own color schemes to the list. But the best way to do that would be using a modal, so first we need to update out navigation so allow us to trigger display modals. In order to do this, we'll have to, once again, refactor our navigation.
 
 Looking at our navigation as a tree, this is the layout we need to get to:
 
@@ -20,7 +20,7 @@ Looking at our navigation as a tree, this is the layout we need to get to:
     <img alt="Navigation stack" src="./images/stack.png" />
 </div>
 
-Source: react navigation [docs](https://reactnavigation.org/docs/modal/)
+We'll be doing this following the react navigation [docs](https://reactnavigation.org/docs/modal/).
 
 Our current layout only has the RootStack, HomeScreen, and DetailsScreen, so we need to add the a MainStack and a Modal Screen in the middle.
 
@@ -40,7 +40,7 @@ Now below that, we declare our MainStack:
 const MainStack = createStackNavigator();
 ```
 
-Now let's add the MainStack and pull our existing navigation all out of the App component and into it's own MainStackScreen component:
+Now let's add the MainStack and pull our existing navigation all out of the App component and into its own MainStackScreen component:
 
 ```js
 // App.js
@@ -59,7 +59,7 @@ const MainStackScreen = () => {
 };
 ```
 
-Finally, update the App component to use RootStack and MainStackScreen
+Finally, update the App component to use RootStack and MainStackScreen:
 
 ```js
 // App.js

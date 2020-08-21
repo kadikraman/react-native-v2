@@ -6,7 +6,7 @@ section: 'Basic components'
 description: 'We talk about components in React Native'
 ---
 
-React (Native) is a component-based framework. This means that your app is made from lots of components that are nested within each other. You're always have one root component (in our case it is our App component), but inside it we can have as many big or small components as we'd like.
+React (Native) is a component-based framework. This means that your app is made from lots of components that are nested within each other. You always have one root component (in our case it is our App component), but inside it we can have as many big or small components as we'd like.
 
 It's generally a really good practice to break your app into components and to make the components as small and standalone as possible. This is handy because:
 
@@ -60,7 +60,7 @@ Now you should be able to see the text "I am a color box" in your app just under
 
 ## Props
 
-In order for our new ColorBox component to be able to reused for different colours, we'll need to somehow dynamically set it's colour. To do this, we can use `props`. Props is short for properties and is basically a way to pass information down the component tree.
+In order for our new ColorBox component to be able to reused for different colours, we'll need to somehow dynamically set its colour. To do this, we can use `props`. Props is short for properties and is basically a way to pass information down the component tree.
 
 Our color box will need to know two things - the name of the color and the hex code. Let's start with cyan and add these props to the `<ColorBox>` component in `App.js`:
 
@@ -86,7 +86,7 @@ const ColorBox = props => {
 };
 ```
 
-Notice that we have to use braces `{}` around variables in order to display them inside Text. This is so React Native could distinguish between pain text and variables that should be evaluated.
+Notice that we have to use braces `{}` around variables in order to display them inside Text. This is so React Native can distinguish between plain text and variables that should be evaluated.
 
 Last thing we'll need to do is style the box! Remember that we can pass in an array to the `style` prop to add multiple styles!
 

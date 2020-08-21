@@ -12,10 +12,11 @@ There are special components in React Native for rendering lists: these are [Fla
 
 ### FlatList
 
-FlatList has a whole bunch of configuration options, but the minimum you will need to give it 3 props:
+FlatList has a whole bunch of configuration options, but the minimum you will need to give it is 3 props:
+
 - data - this is the array of data you want to map over
-- renderItem - this is a function that is passed the item and it's index and will return the individual item component
-- keyExtractor - this is a function that gets passed an item and it's index
+- renderItem - this is a function that is passed the item and its index and will return the individual item component
+- keyExtractor - this is a function that gets passed an item and its index
 
 [🔍 FlatList example](https://snack.expo.io/@kadikraman/flatlist-example)
 

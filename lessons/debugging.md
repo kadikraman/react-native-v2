@@ -33,7 +33,7 @@ The main options you'll use are:
 - refresh: this reloads the JavaScript bundle. You can also do this with Cmd + R (or Ctrl + R)
 - debug: this opens a debug window in your browser
 - show/hide inspector: this allows you to inspect individual elements on the page
-- enable/disable fast refresh: you might now this as "hot reloading", it will update your app with your changes when you save the file, no need to refresh manually
+- enable/disable fast refresh: you might know this as "hot reloading", it will update your app with your changes when you save the file, no need to refresh manually
 
 ### console.log() debugging
 
