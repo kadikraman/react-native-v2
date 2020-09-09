@@ -2,7 +2,7 @@
 
 body {
   font-family: 'Roboto';
-  background-color: #cafafe;
+  background-color: #0091ad;
 }
 
 a,
@@ -19,7 +19,7 @@ li {
 }
 
 .gradient {
-  background: linear-gradient(135deg, #cafafe 0%, #cafafe 100%);
+  background: linear-gradient(135deg, #0091ad 0%, #0091ad 100%);
 }
 
 .lesson {
