@@ -63,7 +63,7 @@ The community package actually comes with prettier pre-installed. Prettier is an
 
 Prettier has very few configuration options, because their mentality is to have as few variations as possible. I am definitely guilty of having a preference here. If you'd like your code to look exactly like mine in the example, add these prettier settings.
 
-Create another file in the root directory of your project and call it `.prettierrc` (you'll already have this file as well if you used `react-native init`)
+Create another file in the root directory of your project and call it `.prettierrc.js` (you'll already have this file as well if you used `react-native init`)
 
 Open the file and add the following:
 
