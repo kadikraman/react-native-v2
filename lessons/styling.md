@@ -152,4 +152,4 @@ const StyledView = styled.View`
 `;
 ```
 
-Otherwise the experience is exactly the same! You can even use `snake-case` like on the web! For this workshop, we will use `StyleSheet`, but feel free to explore this in your own time. Read more about it [here](https://styled-components.com/docs/basics#react-native).
+Otherwise the experience is exactly the same! You can even use `kebab-case` like on the web! For this workshop, we will use `StyleSheet`, but feel free to explore this in your own time. Read more about it [here](https://styled-components.com/docs/basics#react-native).
