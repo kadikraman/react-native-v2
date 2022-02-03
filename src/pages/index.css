@@ -9,9 +9,6 @@ body {
   margin-top: 20px;
 }
 
-.index .jumbotron {
-}
-
 .example-table {
   border-collapse: separate;
 }
@@ -68,4 +65,59 @@ body {
 
 .fem-link {
   text-align: center;
+}
+
+.navbar h2 {
+  font-size: 14px;
+  margin: inherit;
+  padding: inherit;
+  text-transform: uppercase;
+}
+
+.button {
+  border-radius: 10px;
+  background: #142664;
+  color: white;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+.button a {
+  color: white;
+  text-decoration: none;
+}
+
+.button a:hover {
+  text-decoration: underline;
+}
+
+.jumbotron {
+  padding: 2rem 1rem;
+  margin-bottom: 2rem;
+  background-color: #e9ecef;
+  border-radius: .3rem;
+}
+
+@media (min-width: 576px) {
+  .jumbotron {
+    padding: 4rem 2rem;
+  }
+}
+
+.navbar {
+  position: relative;
+  padding: .5rem 1rem;
+}
+
+.navbar-brand {
+  display: inline-block;
+  padding-top: .3125rem;
+  padding-bottom: .3125rem;
+  margin-right: 1rem;
+  font-size: 1.25rem;
+  line-height: inherit;
+  white-space: nowrap;
 }

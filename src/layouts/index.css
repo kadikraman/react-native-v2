@@ -5,6 +5,14 @@ body {
   background-color: #bfd7ff;
 }
 
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
 a,
 li a {
   color: #5465ff;

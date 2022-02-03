@@ -30,6 +30,7 @@ const TemplateWrapper = props => {
             <Link to="/" className="navbar-brand">
               {data.site.siteMetadata.title}
             </Link>
+            <h2 class="button"><a href="https://frontendmasters.com/courses/css-grid-flexbox-v2/">React Native Course Videos</a>&nbsp;▶️&nbsp;</h2>
           </div>
           <div className="main">{props.children}</div>
         </div>
