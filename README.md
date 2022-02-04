@@ -1,6 +1,8 @@
-# React Native v2
+# [React Native v2](https://frontendmasters.com/courses/react-native-v2/)
 
-Welcome to my React Native course! See the course website [here](https://kadikraman.github.io/react-native-v2/).
+Welcome to my React Native course! See the [course website here](https://kadikraman.github.io/react-native-v2/).
+
+If you'd like to follow along with videos for the course, you can watch my [React Native v2 course](https://frontendmasters.com/courses/react-native-v2/) on Frontend Masters.
 
 ## About the course
 
