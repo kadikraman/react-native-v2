@@ -76,7 +76,7 @@ const App = () => {
 export default App;
 ```
 
-How does it look? Not great I imagine. You might notice that the text is overlaid by the notification bar at the top of the screen. You could add some padding to the top of the screen, but that wouldn't serve for a general solution - while it might work for the phone you're testing on for the moment, there are tends of iPhones and hundreds of Android phones with different specs.
+How does it look? Not great I imagine. You might notice that the text is overlaid by the notification bar at the top of the screen. You could add some padding to the top of the screen, but that wouldn't serve for a general solution - while it might work for the phone you're testing on for the moment, there are tens of iPhones and hundreds of Android phones with different specs.
 
 Thankfully there is something handy built into React Native to help with this. `SafeAreaView` is a component that automatically adds the necessary padding around your content to ensure that you don't overlap with the top and bottom of the screen. This was especially handy when iPhone X came out, as it handles the bottom spacing necessary for the notch.
 
